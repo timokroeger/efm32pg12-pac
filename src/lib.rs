@@ -385,18 +385,16 @@ unsafe impl Send for CRYPTO1 {}
 impl CRYPTO1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const crypto1::RegisterBlock {
+    pub const fn ptr() -> *const crypto0::RegisterBlock {
         0x400f_0400 as *const _
     }
 }
 impl Deref for CRYPTO1 {
-    type Target = crypto1::RegisterBlock;
+    type Target = crypto0::RegisterBlock;
     fn deref(&self) -> &Self::Target {
         unsafe { &*CRYPTO1::ptr() }
     }
 }
-#[doc = "CRYPTO1"]
-pub mod crypto1;
 #[doc = "GPIO"]
 pub struct GPIO {
     _marker: PhantomData<*const ()>,
@@ -525,18 +523,16 @@ unsafe impl Send for TIMER1 {}
 impl TIMER1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const timer1::RegisterBlock {
+    pub const fn ptr() -> *const timer0::RegisterBlock {
         0x4001_8400 as *const _
     }
 }
 impl Deref for TIMER1 {
-    type Target = timer1::RegisterBlock;
+    type Target = timer0::RegisterBlock;
     fn deref(&self) -> &Self::Target {
         unsafe { &*TIMER1::ptr() }
     }
 }
-#[doc = "TIMER1"]
-pub mod timer1;
 #[doc = "WTIMER0"]
 pub struct WTIMER0 {
     _marker: PhantomData<*const ()>,
@@ -557,26 +553,6 @@ impl Deref for WTIMER0 {
 }
 #[doc = "WTIMER0"]
 pub mod wtimer0;
-#[doc = "WTIMER1"]
-pub struct WTIMER1 {
-    _marker: PhantomData<*const ()>,
-}
-unsafe impl Send for WTIMER1 {}
-impl WTIMER1 {
-    #[doc = r"Returns a pointer to the register block"]
-    #[inline(always)]
-    pub const fn ptr() -> *const wtimer1::RegisterBlock {
-        0x4001_a400 as *const _
-    }
-}
-impl Deref for WTIMER1 {
-    type Target = wtimer1::RegisterBlock;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &*WTIMER1::ptr() }
-    }
-}
-#[doc = "WTIMER1"]
-pub mod wtimer1;
 #[doc = "USART0"]
 pub struct USART0 {
     _marker: PhantomData<*const ()>,
@@ -605,18 +581,16 @@ unsafe impl Send for USART1 {}
 impl USART1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const usart1::RegisterBlock {
+    pub const fn ptr() -> *const usart0::RegisterBlock {
         0x4001_0400 as *const _
     }
 }
 impl Deref for USART1 {
-    type Target = usart1::RegisterBlock;
+    type Target = usart0::RegisterBlock;
     fn deref(&self) -> &Self::Target {
         unsafe { &*USART1::ptr() }
     }
 }
-#[doc = "USART1"]
-pub mod usart1;
 #[doc = "USART2"]
 pub struct USART2 {
     _marker: PhantomData<*const ()>,
@@ -625,18 +599,16 @@ unsafe impl Send for USART2 {}
 impl USART2 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const usart2::RegisterBlock {
+    pub const fn ptr() -> *const usart0::RegisterBlock {
         0x4001_0800 as *const _
     }
 }
 impl Deref for USART2 {
-    type Target = usart2::RegisterBlock;
+    type Target = usart0::RegisterBlock;
     fn deref(&self) -> &Self::Target {
         unsafe { &*USART2::ptr() }
     }
 }
-#[doc = "USART2"]
-pub mod usart2;
 #[doc = "USART3"]
 pub struct USART3 {
     _marker: PhantomData<*const ()>,
@@ -645,18 +617,16 @@ unsafe impl Send for USART3 {}
 impl USART3 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const usart3::RegisterBlock {
+    pub const fn ptr() -> *const usart0::RegisterBlock {
         0x4001_0c00 as *const _
     }
 }
 impl Deref for USART3 {
-    type Target = usart3::RegisterBlock;
+    type Target = usart0::RegisterBlock;
     fn deref(&self) -> &Self::Target {
         unsafe { &*USART3::ptr() }
     }
 }
-#[doc = "USART3"]
-pub mod usart3;
 #[doc = "LEUART0"]
 pub struct LEUART0 {
     _marker: PhantomData<*const ()>,
@@ -737,46 +707,6 @@ impl Deref for PCNT0 {
 }
 #[doc = "PCNT0"]
 pub mod pcnt0;
-#[doc = "PCNT1"]
-pub struct PCNT1 {
-    _marker: PhantomData<*const ()>,
-}
-unsafe impl Send for PCNT1 {}
-impl PCNT1 {
-    #[doc = r"Returns a pointer to the register block"]
-    #[inline(always)]
-    pub const fn ptr() -> *const pcnt1::RegisterBlock {
-        0x4004_e400 as *const _
-    }
-}
-impl Deref for PCNT1 {
-    type Target = pcnt1::RegisterBlock;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &*PCNT1::ptr() }
-    }
-}
-#[doc = "PCNT1"]
-pub mod pcnt1;
-#[doc = "PCNT2"]
-pub struct PCNT2 {
-    _marker: PhantomData<*const ()>,
-}
-unsafe impl Send for PCNT2 {}
-impl PCNT2 {
-    #[doc = r"Returns a pointer to the register block"]
-    #[inline(always)]
-    pub const fn ptr() -> *const pcnt2::RegisterBlock {
-        0x4004_e800 as *const _
-    }
-}
-impl Deref for PCNT2 {
-    type Target = pcnt2::RegisterBlock;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &*PCNT2::ptr() }
-    }
-}
-#[doc = "PCNT2"]
-pub mod pcnt2;
 #[doc = "I2C0"]
 pub struct I2C0 {
     _marker: PhantomData<*const ()>,
@@ -797,26 +727,6 @@ impl Deref for I2C0 {
 }
 #[doc = "I2C0"]
 pub mod i2c0;
-#[doc = "I2C1"]
-pub struct I2C1 {
-    _marker: PhantomData<*const ()>,
-}
-unsafe impl Send for I2C1 {}
-impl I2C1 {
-    #[doc = r"Returns a pointer to the register block"]
-    #[inline(always)]
-    pub const fn ptr() -> *const i2c1::RegisterBlock {
-        0x4000_c400 as *const _
-    }
-}
-impl Deref for I2C1 {
-    type Target = i2c1::RegisterBlock;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &*I2C1::ptr() }
-    }
-}
-#[doc = "I2C1"]
-pub mod i2c1;
 #[doc = "ADC0"]
 pub struct ADC0 {
     _marker: PhantomData<*const ()>,
@@ -857,26 +767,6 @@ impl Deref for ACMP0 {
 }
 #[doc = "ACMP0"]
 pub mod acmp0;
-#[doc = "ACMP1"]
-pub struct ACMP1 {
-    _marker: PhantomData<*const ()>,
-}
-unsafe impl Send for ACMP1 {}
-impl ACMP1 {
-    #[doc = r"Returns a pointer to the register block"]
-    #[inline(always)]
-    pub const fn ptr() -> *const acmp1::RegisterBlock {
-        0x4000_0400 as *const _
-    }
-}
-impl Deref for ACMP1 {
-    type Target = acmp1::RegisterBlock;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &*ACMP1::ptr() }
-    }
-}
-#[doc = "ACMP1"]
-pub mod acmp1;
 #[doc = "IDAC0"]
 pub struct IDAC0 {
     _marker: PhantomData<*const ()>,
@@ -997,26 +887,6 @@ impl Deref for WDOG0 {
 }
 #[doc = "WDOG0"]
 pub mod wdog0;
-#[doc = "WDOG1"]
-pub struct WDOG1 {
-    _marker: PhantomData<*const ()>,
-}
-unsafe impl Send for WDOG1 {}
-impl WDOG1 {
-    #[doc = r"Returns a pointer to the register block"]
-    #[inline(always)]
-    pub const fn ptr() -> *const wdog1::RegisterBlock {
-        0x4005_2400 as *const _
-    }
-}
-impl Deref for WDOG1 {
-    type Target = wdog1::RegisterBlock;
-    fn deref(&self) -> &Self::Target {
-        unsafe { &*WDOG1::ptr() }
-    }
-}
-#[doc = "WDOG1"]
-pub mod wdog1;
 #[doc = "ETM"]
 pub struct ETM {
     _marker: PhantomData<*const ()>,
@@ -1110,8 +980,6 @@ pub struct Peripherals {
     pub TIMER1: TIMER1,
     #[doc = "WTIMER0"]
     pub WTIMER0: WTIMER0,
-    #[doc = "WTIMER1"]
-    pub WTIMER1: WTIMER1,
     #[doc = "USART0"]
     pub USART0: USART0,
     #[doc = "USART1"]
@@ -1128,20 +996,12 @@ pub struct Peripherals {
     pub CRYOTIMER: CRYOTIMER,
     #[doc = "PCNT0"]
     pub PCNT0: PCNT0,
-    #[doc = "PCNT1"]
-    pub PCNT1: PCNT1,
-    #[doc = "PCNT2"]
-    pub PCNT2: PCNT2,
     #[doc = "I2C0"]
     pub I2C0: I2C0,
-    #[doc = "I2C1"]
-    pub I2C1: I2C1,
     #[doc = "ADC0"]
     pub ADC0: ADC0,
     #[doc = "ACMP0"]
     pub ACMP0: ACMP0,
-    #[doc = "ACMP1"]
-    pub ACMP1: ACMP1,
     #[doc = "IDAC0"]
     pub IDAC0: IDAC0,
     #[doc = "VDAC0"]
@@ -1154,8 +1014,6 @@ pub struct Peripherals {
     pub RTCC: RTCC,
     #[doc = "WDOG0"]
     pub WDOG0: WDOG0,
-    #[doc = "WDOG1"]
-    pub WDOG1: WDOG1,
     #[doc = "ETM"]
     pub ETM: ETM,
     #[doc = "SMU"]
@@ -1221,9 +1079,6 @@ impl Peripherals {
             WTIMER0: WTIMER0 {
                 _marker: PhantomData,
             },
-            WTIMER1: WTIMER1 {
-                _marker: PhantomData,
-            },
             USART0: USART0 {
                 _marker: PhantomData,
             },
@@ -1248,25 +1103,13 @@ impl Peripherals {
             PCNT0: PCNT0 {
                 _marker: PhantomData,
             },
-            PCNT1: PCNT1 {
-                _marker: PhantomData,
-            },
-            PCNT2: PCNT2 {
-                _marker: PhantomData,
-            },
             I2C0: I2C0 {
-                _marker: PhantomData,
-            },
-            I2C1: I2C1 {
                 _marker: PhantomData,
             },
             ADC0: ADC0 {
                 _marker: PhantomData,
             },
             ACMP0: ACMP0 {
-                _marker: PhantomData,
-            },
-            ACMP1: ACMP1 {
                 _marker: PhantomData,
             },
             IDAC0: IDAC0 {
@@ -1285,9 +1128,6 @@ impl Peripherals {
                 _marker: PhantomData,
             },
             WDOG0: WDOG0 {
-                _marker: PhantomData,
-            },
-            WDOG1: WDOG1 {
                 _marker: PhantomData,
             },
             ETM: ETM {
