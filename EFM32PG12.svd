@@ -46940,7 +46940,7 @@
         </register>
       </registers>
     </peripheral>
-    <peripheral deriveFrom="WTIMER0">
+    <peripheral derivedFrom="WTIMER0">
       <name>WTIMER1</name>
       <description>WTIMER1</description>
       <baseAddress>0x4001A400</baseAddress>
@@ -54750,7 +54750,7 @@
         </register>
       </registers>
     </peripheral>
-    <peripheral deriveFrom="PCNT0">
+    <peripheral derivedFrom="PCNT0">
       <name>PCNT1</name>
       <description>PCNT1</description>
       <baseAddress>0x4004E400</baseAddress>
@@ -54759,7 +54759,7 @@
         <value>38</value>
       </interrupt>
     </peripheral>
-    <peripheral deriveFrom="PCNT0">
+    <peripheral derivedFrom="PCNT0">
       <name>PCNT2</name>
       <description>PCNT2</description>
       <baseAddress>0x4004E800</baseAddress>
@@ -56296,7 +56296,7 @@
         </register>
       </registers>
     </peripheral>
-    <peripheral deriveFrom="I2C0">
+    <peripheral derivedFrom="I2C0">
       <name>I2C1</name>
       <description>I2C1</description>
       <baseAddress>0x4000C400</baseAddress>
@@ -60435,7 +60435,7 @@
         </register>
       </registers>
     </peripheral>
-    <peripheral deriveFrom="ACMP">
+    <peripheral derivedFrom="ACMP0">
       <name>ACMP1</name>
       <description>ACMP1</description>
       <baseAddress>0x40000400</baseAddress>
@@ -78933,7 +78933,7 @@
         </register>
       </registers>
     </peripheral>
-    <peripheral deriveFrom="WDOG0">
+    <peripheral derivedFrom="WDOG0">
       <name>WDOG1</name>
       <description>WDOG1</description>
       <baseAddress>0x40052400</baseAddress>
