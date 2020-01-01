@@ -12,16 +12,15 @@ impl crate::ResetValue for super::LFBPRESC0 {
 }
 #[doc = "Prescaler\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum SYSTICK_A {
     #[doc = "0: LFBCLKSYSTICK = LFBCLK"]
-    DIV1,
+    DIV1 = 0,
 }
 impl From<SYSTICK_A> for u8 {
     #[inline(always)]
     fn from(variant: SYSTICK_A) -> Self {
-        match variant {
-            SYSTICK_A::DIV1 => 0,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `SYSTICK`"]
@@ -44,25 +43,21 @@ impl SYSTICK_R {
 }
 #[doc = "Low Energy UART 0 Prescaler\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum LEUART0_A {
     #[doc = "0: LFBCLKLEUART0 = LFBCLK"]
-    DIV1,
+    DIV1 = 0,
     #[doc = "1: LFBCLKLEUART0 = LFBCLK/2"]
-    DIV2,
+    DIV2 = 1,
     #[doc = "2: LFBCLKLEUART0 = LFBCLK/4"]
-    DIV4,
+    DIV4 = 2,
     #[doc = "3: LFBCLKLEUART0 = LFBCLK/8"]
-    DIV8,
+    DIV8 = 3,
 }
 impl From<LEUART0_A> for u8 {
     #[inline(always)]
     fn from(variant: LEUART0_A) -> Self {
-        match variant {
-            LEUART0_A::DIV1 => 0,
-            LEUART0_A::DIV2 => 1,
-            LEUART0_A::DIV4 => 2,
-            LEUART0_A::DIV8 => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `LEUART0`"]
@@ -141,25 +136,21 @@ impl<'a> LEUART0_W<'a> {
 }
 #[doc = "Capacitive touch sense module Prescaler\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum CSEN_A {
     #[doc = "0: LFBCLKCSEN = LFBCLK/16"]
-    DIV16,
+    DIV16 = 0,
     #[doc = "1: LFBCLKCSEN = LFBCLK/32"]
-    DIV32,
+    DIV32 = 1,
     #[doc = "2: LFBCLKCSEN = LFBCLK/64"]
-    DIV64,
+    DIV64 = 2,
     #[doc = "3: LFBCLKCSEN = LFBCLK/128"]
-    DIV128,
+    DIV128 = 3,
 }
 impl From<CSEN_A> for u8 {
     #[inline(always)]
     fn from(variant: CSEN_A) -> Self {
-        match variant {
-            CSEN_A::DIV16 => 0,
-            CSEN_A::DIV32 => 1,
-            CSEN_A::DIV64 => 2,
-            CSEN_A::DIV128 => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `CSEN`"]

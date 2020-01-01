@@ -12,19 +12,17 @@ impl crate::ResetValue for super::PWRCFG {
 }
 #[doc = "Power Configuration\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum PWRCFG_A {
     #[doc = "0: Power up configuration. Works with any external configuration."]
-    UNCONFIGURED,
+    UNCONFIGURED = 0,
     #[doc = "2: DCDC is enabled and routed to DVDD."]
-    DCDCTODVDD,
+    DCDCTODVDD = 2,
 }
 impl From<PWRCFG_A> for u8 {
     #[inline(always)]
     fn from(variant: PWRCFG_A) -> Self {
-        match variant {
-            PWRCFG_A::UNCONFIGURED => 0,
-            PWRCFG_A::DCDCTODVDD => 2,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `PWRCFG`"]

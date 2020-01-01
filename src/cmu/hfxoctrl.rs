@@ -36,22 +36,19 @@ impl<'a> MODE_W<'a> {
 }
 #[doc = "HFXO Automatic Peak Detection and Shunt Current Optimization Mode\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum PEAKDETSHUNTOPTMODE_A {
     #[doc = "0: Automatic control of HFXO peak detection and shunt optimization sequences. CMU_CMD HFXOPEAKDETSTART and HFXOSHUNTOPTSTART can also be used."]
-    AUTOCMD,
+    AUTOCMD = 0,
     #[doc = "1: CMU_CMD HFXOPEAKDETSTART and HFXOSHUNTOPTSTART can be used to trigger peak detection and shunt optimization sequences."]
-    CMD,
+    CMD = 1,
     #[doc = "2: CMU_HFXOSTEADYSTATECTRL IBTRIMXOCORE, REGISH, REGSELILOW, and PEAKDETEN are under full software control and are allowed to be changed once HFXO is ready."]
-    MANUAL,
+    MANUAL = 2,
 }
 impl From<PEAKDETSHUNTOPTMODE_A> for u8 {
     #[inline(always)]
     fn from(variant: PEAKDETSHUNTOPTMODE_A) -> Self {
-        match variant {
-            PEAKDETSHUNTOPTMODE_A::AUTOCMD => 0,
-            PEAKDETSHUNTOPTMODE_A::CMD => 1,
-            PEAKDETSHUNTOPTMODE_A::MANUAL => 2,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `PEAKDETSHUNTOPTMODE`"]
@@ -190,37 +187,29 @@ impl<'a> XTO2GND_W<'a> {
 }
 #[doc = "HFXO Low Frequency Timeout\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum LFTIMEOUT_A {
     #[doc = "0: Timeout period of 0 cycles (disabled)"]
-    _0CYCLES,
+    _0CYCLES = 0,
     #[doc = "1: Timeout period of 2 cycles"]
-    _2CYCLES,
+    _2CYCLES = 1,
     #[doc = "2: Timeout period of 4 cycles"]
-    _4CYCLES,
+    _4CYCLES = 2,
     #[doc = "3: Timeout period of 16 cycles"]
-    _16CYCLES,
+    _16CYCLES = 3,
     #[doc = "4: Timeout period of 32 cycles"]
-    _32CYCLES,
+    _32CYCLES = 4,
     #[doc = "5: Timeout period of 64 cycles"]
-    _64CYCLES,
+    _64CYCLES = 5,
     #[doc = "6: Timeout period of 1024 cycles"]
-    _1KCYCLES,
+    _1KCYCLES = 6,
     #[doc = "7: Timeout period of 4096 cycles"]
-    _4KCYCLES,
+    _4KCYCLES = 7,
 }
 impl From<LFTIMEOUT_A> for u8 {
     #[inline(always)]
     fn from(variant: LFTIMEOUT_A) -> Self {
-        match variant {
-            LFTIMEOUT_A::_0CYCLES => 0,
-            LFTIMEOUT_A::_2CYCLES => 1,
-            LFTIMEOUT_A::_4CYCLES => 2,
-            LFTIMEOUT_A::_16CYCLES => 3,
-            LFTIMEOUT_A::_32CYCLES => 4,
-            LFTIMEOUT_A::_64CYCLES => 5,
-            LFTIMEOUT_A::_1KCYCLES => 6,
-            LFTIMEOUT_A::_4KCYCLES => 7,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `LFTIMEOUT`"]

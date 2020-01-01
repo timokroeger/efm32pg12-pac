@@ -12,31 +12,25 @@ impl crate::ResetValue for super::CALCTRL {
 }
 #[doc = "Calibration Up-counter Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum UPSEL_A {
     #[doc = "0: Select HFXO as up-counter"]
-    HFXO,
+    HFXO = 0,
     #[doc = "1: Select LFXO as up-counter"]
-    LFXO,
+    LFXO = 1,
     #[doc = "2: Select HFRCO as up-counter"]
-    HFRCO,
+    HFRCO = 2,
     #[doc = "3: Select LFRCO as up-counter"]
-    LFRCO,
+    LFRCO = 3,
     #[doc = "4: Select AUXHFRCO as up-counter"]
-    AUXHFRCO,
+    AUXHFRCO = 4,
     #[doc = "5: Select PRS input selected by PRSUPSEL as up-counter"]
-    PRS,
+    PRS = 5,
 }
 impl From<UPSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: UPSEL_A) -> Self {
-        match variant {
-            UPSEL_A::HFXO => 0,
-            UPSEL_A::LFXO => 1,
-            UPSEL_A::HFRCO => 2,
-            UPSEL_A::LFRCO => 3,
-            UPSEL_A::AUXHFRCO => 4,
-            UPSEL_A::PRS => 5,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `UPSEL`"]
@@ -136,34 +130,27 @@ impl<'a> UPSEL_W<'a> {
 }
 #[doc = "Calibration Down-counter Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum DOWNSEL_A {
     #[doc = "0: Select HFCLK for down-counter"]
-    HFCLK,
+    HFCLK = 0,
     #[doc = "1: Select HFXO for down-counter"]
-    HFXO,
+    HFXO = 1,
     #[doc = "2: Select LFXO for down-counter"]
-    LFXO,
+    LFXO = 2,
     #[doc = "3: Select HFRCO for down-counter"]
-    HFRCO,
+    HFRCO = 3,
     #[doc = "4: Select LFRCO for down-counter"]
-    LFRCO,
+    LFRCO = 4,
     #[doc = "5: Select AUXHFRCO for down-counter"]
-    AUXHFRCO,
+    AUXHFRCO = 5,
     #[doc = "6: Select PRS input selected by PRSDOWNSEL as down-counter"]
-    PRS,
+    PRS = 6,
 }
 impl From<DOWNSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: DOWNSEL_A) -> Self {
-        match variant {
-            DOWNSEL_A::HFCLK => 0,
-            DOWNSEL_A::HFXO => 1,
-            DOWNSEL_A::LFXO => 2,
-            DOWNSEL_A::HFRCO => 3,
-            DOWNSEL_A::LFRCO => 4,
-            DOWNSEL_A::AUXHFRCO => 5,
-            DOWNSEL_A::PRS => 6,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `DOWNSEL`"]
@@ -298,49 +285,37 @@ impl<'a> CONT_W<'a> {
 }
 #[doc = "PRS Select for PRS Input When Selected in UPSEL\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum PRSUPSEL_A {
     #[doc = "0: PRS Channel 0 selected as input"]
-    PRSCH0,
+    PRSCH0 = 0,
     #[doc = "1: PRS Channel 1 selected as input"]
-    PRSCH1,
+    PRSCH1 = 1,
     #[doc = "2: PRS Channel 2 selected as input"]
-    PRSCH2,
+    PRSCH2 = 2,
     #[doc = "3: PRS Channel 3 selected as input"]
-    PRSCH3,
+    PRSCH3 = 3,
     #[doc = "4: PRS Channel 4 selected as input"]
-    PRSCH4,
+    PRSCH4 = 4,
     #[doc = "5: PRS Channel 5 selected as input"]
-    PRSCH5,
+    PRSCH5 = 5,
     #[doc = "6: PRS Channel 6 selected as input"]
-    PRSCH6,
+    PRSCH6 = 6,
     #[doc = "7: PRS Channel 7 selected as input"]
-    PRSCH7,
+    PRSCH7 = 7,
     #[doc = "8: PRS Channel 8 selected as input"]
-    PRSCH8,
+    PRSCH8 = 8,
     #[doc = "9: PRS Channel 9 selected as input"]
-    PRSCH9,
+    PRSCH9 = 9,
     #[doc = "10: PRS Channel 10 selected as input"]
-    PRSCH10,
+    PRSCH10 = 10,
     #[doc = "11: PRS Channel 11 selected as input"]
-    PRSCH11,
+    PRSCH11 = 11,
 }
 impl From<PRSUPSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: PRSUPSEL_A) -> Self {
-        match variant {
-            PRSUPSEL_A::PRSCH0 => 0,
-            PRSUPSEL_A::PRSCH1 => 1,
-            PRSUPSEL_A::PRSCH2 => 2,
-            PRSUPSEL_A::PRSCH3 => 3,
-            PRSUPSEL_A::PRSCH4 => 4,
-            PRSUPSEL_A::PRSCH5 => 5,
-            PRSUPSEL_A::PRSCH6 => 6,
-            PRSUPSEL_A::PRSCH7 => 7,
-            PRSUPSEL_A::PRSCH8 => 8,
-            PRSUPSEL_A::PRSCH9 => 9,
-            PRSUPSEL_A::PRSCH10 => 10,
-            PRSUPSEL_A::PRSCH11 => 11,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `PRSUPSEL`"]
@@ -506,49 +481,37 @@ impl<'a> PRSUPSEL_W<'a> {
 }
 #[doc = "PRS Select for PRS Input When Selected in DOWNSEL\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum PRSDOWNSEL_A {
     #[doc = "0: PRS Channel 0 selected as input"]
-    PRSCH0,
+    PRSCH0 = 0,
     #[doc = "1: PRS Channel 1 selected as input"]
-    PRSCH1,
+    PRSCH1 = 1,
     #[doc = "2: PRS Channel 2 selected as input"]
-    PRSCH2,
+    PRSCH2 = 2,
     #[doc = "3: PRS Channel 3 selected as input"]
-    PRSCH3,
+    PRSCH3 = 3,
     #[doc = "4: PRS Channel 4 selected as input"]
-    PRSCH4,
+    PRSCH4 = 4,
     #[doc = "5: PRS Channel 5 selected as input"]
-    PRSCH5,
+    PRSCH5 = 5,
     #[doc = "6: PRS Channel 6 selected as input"]
-    PRSCH6,
+    PRSCH6 = 6,
     #[doc = "7: PRS Channel 7 selected as input"]
-    PRSCH7,
+    PRSCH7 = 7,
     #[doc = "8: PRS Channel 8 selected as input"]
-    PRSCH8,
+    PRSCH8 = 8,
     #[doc = "9: PRS Channel 9 selected as input"]
-    PRSCH9,
+    PRSCH9 = 9,
     #[doc = "10: PRS Channel 10 selected as input"]
-    PRSCH10,
+    PRSCH10 = 10,
     #[doc = "11: PRS Channel 11 selected as input"]
-    PRSCH11,
+    PRSCH11 = 11,
 }
 impl From<PRSDOWNSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: PRSDOWNSEL_A) -> Self {
-        match variant {
-            PRSDOWNSEL_A::PRSCH0 => 0,
-            PRSDOWNSEL_A::PRSCH1 => 1,
-            PRSDOWNSEL_A::PRSCH2 => 2,
-            PRSDOWNSEL_A::PRSCH3 => 3,
-            PRSDOWNSEL_A::PRSCH4 => 4,
-            PRSDOWNSEL_A::PRSCH5 => 5,
-            PRSDOWNSEL_A::PRSCH6 => 6,
-            PRSDOWNSEL_A::PRSCH7 => 7,
-            PRSDOWNSEL_A::PRSCH8 => 8,
-            PRSDOWNSEL_A::PRSCH9 => 9,
-            PRSDOWNSEL_A::PRSCH10 => 10,
-            PRSDOWNSEL_A::PRSCH11 => 11,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `PRSDOWNSEL`"]

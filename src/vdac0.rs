@@ -73,7 +73,7 @@ pub struct RegisterBlock {
     #[doc = "0xf8 - Operational Amplifier Calibration Register"]
     pub opa2_cal: OPA2_CAL,
 }
-#[doc = "Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ctrl](ctrl) module"]
+#[doc = "Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ctrl](ctrl) module"]
 pub type CTRL = crate::Reg<u32, _CTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -84,7 +84,7 @@ impl crate::Readable for CTRL {}
 impl crate::Writable for CTRL {}
 #[doc = "Control Register"]
 pub mod ctrl;
-#[doc = "Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [status](status) module"]
+#[doc = "Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [status](status) module"]
 pub type STATUS = crate::Reg<u32, _STATUS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -93,7 +93,7 @@ pub struct _STATUS;
 impl crate::Readable for STATUS {}
 #[doc = "Status Register"]
 pub mod status;
-#[doc = "Channel 0 Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ch0ctrl](ch0ctrl) module"]
+#[doc = "Channel 0 Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ch0ctrl](ch0ctrl) module"]
 pub type CH0CTRL = crate::Reg<u32, _CH0CTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -104,7 +104,7 @@ impl crate::Readable for CH0CTRL {}
 impl crate::Writable for CH0CTRL {}
 #[doc = "Channel 0 Control Register"]
 pub mod ch0ctrl;
-#[doc = "Channel 1 Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ch1ctrl](ch1ctrl) module"]
+#[doc = "Channel 1 Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ch1ctrl](ch1ctrl) module"]
 pub type CH1CTRL = crate::Reg<u32, _CH1CTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -115,7 +115,7 @@ impl crate::Readable for CH1CTRL {}
 impl crate::Writable for CH1CTRL {}
 #[doc = "Channel 1 Control Register"]
 pub mod ch1ctrl;
-#[doc = "Command Register\n\nThis register you can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cmd](cmd) module"]
+#[doc = "Command Register\n\nThis register you can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cmd](cmd) module"]
 pub type CMD = crate::Reg<u32, _CMD>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -124,7 +124,7 @@ pub struct _CMD;
 impl crate::Writable for CMD {}
 #[doc = "Command Register"]
 pub mod cmd;
-#[doc = "Interrupt Flag Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [if_](if_) module"]
+#[doc = "Interrupt Flag Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [if_](if_) module"]
 pub type IF = crate::Reg<u32, _IF>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -133,7 +133,7 @@ pub struct _IF;
 impl crate::Readable for IF {}
 #[doc = "Interrupt Flag Register"]
 pub mod if_;
-#[doc = "Interrupt Flag Set Register\n\nThis register you can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ifs](ifs) module"]
+#[doc = "Interrupt Flag Set Register\n\nThis register you can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ifs](ifs) module"]
 pub type IFS = crate::Reg<u32, _IFS>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -142,7 +142,7 @@ pub struct _IFS;
 impl crate::Writable for IFS {}
 #[doc = "Interrupt Flag Set Register"]
 pub mod ifs;
-#[doc = "Interrupt Flag Clear Register\n\nThis register you can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ifc](ifc) module"]
+#[doc = "Interrupt Flag Clear Register\n\nThis register you can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ifc](ifc) module"]
 pub type IFC = crate::Reg<u32, _IFC>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -151,7 +151,7 @@ pub struct _IFC;
 impl crate::Writable for IFC {}
 #[doc = "Interrupt Flag Clear Register"]
 pub mod ifc;
-#[doc = "Interrupt Enable Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ien](ien) module"]
+#[doc = "Interrupt Enable Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ien](ien) module"]
 pub type IEN = crate::Reg<u32, _IEN>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -162,7 +162,7 @@ impl crate::Readable for IEN {}
 impl crate::Writable for IEN {}
 #[doc = "Interrupt Enable Register"]
 pub mod ien;
-#[doc = "Channel 0 Data Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ch0data](ch0data) module"]
+#[doc = "Channel 0 Data Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ch0data](ch0data) module"]
 pub type CH0DATA = crate::Reg<u32, _CH0DATA>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -173,7 +173,7 @@ impl crate::Readable for CH0DATA {}
 impl crate::Writable for CH0DATA {}
 #[doc = "Channel 0 Data Register"]
 pub mod ch0data;
-#[doc = "Channel 1 Data Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [ch1data](ch1data) module"]
+#[doc = "Channel 1 Data Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ch1data](ch1data) module"]
 pub type CH1DATA = crate::Reg<u32, _CH1DATA>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -184,7 +184,7 @@ impl crate::Readable for CH1DATA {}
 impl crate::Writable for CH1DATA {}
 #[doc = "Channel 1 Data Register"]
 pub mod ch1data;
-#[doc = "Combined Data Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [combdata](combdata) module"]
+#[doc = "Combined Data Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [combdata](combdata) module"]
 pub type COMBDATA = crate::Reg<u32, _COMBDATA>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -195,7 +195,7 @@ impl crate::Readable for COMBDATA {}
 impl crate::Writable for COMBDATA {}
 #[doc = "Combined Data Register"]
 pub mod combdata;
-#[doc = "Calibration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [cal](cal) module"]
+#[doc = "Calibration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cal](cal) module"]
 pub type CAL = crate::Reg<u32, _CAL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -206,7 +206,7 @@ impl crate::Readable for CAL {}
 impl crate::Writable for CAL {}
 #[doc = "Calibration Register"]
 pub mod cal;
-#[doc = "Operational Amplifier APORT Request Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa0_aportreq](opa0_aportreq) module"]
+#[doc = "Operational Amplifier APORT Request Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa0_aportreq](opa0_aportreq) module"]
 pub type OPA0_APORTREQ = crate::Reg<u32, _OPA0_APORTREQ>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -215,7 +215,7 @@ pub struct _OPA0_APORTREQ;
 impl crate::Readable for OPA0_APORTREQ {}
 #[doc = "Operational Amplifier APORT Request Status Register"]
 pub mod opa0_aportreq;
-#[doc = "Operational Amplifier APORT Conflict Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa0_aportconflict](opa0_aportconflict) module"]
+#[doc = "Operational Amplifier APORT Conflict Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa0_aportconflict](opa0_aportconflict) module"]
 pub type OPA0_APORTCONFLICT = crate::Reg<u32, _OPA0_APORTCONFLICT>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -224,7 +224,7 @@ pub struct _OPA0_APORTCONFLICT;
 impl crate::Readable for OPA0_APORTCONFLICT {}
 #[doc = "Operational Amplifier APORT Conflict Status Register"]
 pub mod opa0_aportconflict;
-#[doc = "Operational Amplifier Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa0_ctrl](opa0_ctrl) module"]
+#[doc = "Operational Amplifier Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa0_ctrl](opa0_ctrl) module"]
 pub type OPA0_CTRL = crate::Reg<u32, _OPA0_CTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -235,7 +235,7 @@ impl crate::Readable for OPA0_CTRL {}
 impl crate::Writable for OPA0_CTRL {}
 #[doc = "Operational Amplifier Control Register"]
 pub mod opa0_ctrl;
-#[doc = "Operational Amplifier Timer Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa0_timer](opa0_timer) module"]
+#[doc = "Operational Amplifier Timer Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa0_timer](opa0_timer) module"]
 pub type OPA0_TIMER = crate::Reg<u32, _OPA0_TIMER>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -246,7 +246,7 @@ impl crate::Readable for OPA0_TIMER {}
 impl crate::Writable for OPA0_TIMER {}
 #[doc = "Operational Amplifier Timer Control Register"]
 pub mod opa0_timer;
-#[doc = "Operational Amplifier Mux Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa0_mux](opa0_mux) module"]
+#[doc = "Operational Amplifier Mux Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa0_mux](opa0_mux) module"]
 pub type OPA0_MUX = crate::Reg<u32, _OPA0_MUX>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -257,7 +257,7 @@ impl crate::Readable for OPA0_MUX {}
 impl crate::Writable for OPA0_MUX {}
 #[doc = "Operational Amplifier Mux Configuration Register"]
 pub mod opa0_mux;
-#[doc = "Operational Amplifier Output Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa0_out](opa0_out) module"]
+#[doc = "Operational Amplifier Output Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa0_out](opa0_out) module"]
 pub type OPA0_OUT = crate::Reg<u32, _OPA0_OUT>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -268,7 +268,7 @@ impl crate::Readable for OPA0_OUT {}
 impl crate::Writable for OPA0_OUT {}
 #[doc = "Operational Amplifier Output Configuration Register"]
 pub mod opa0_out;
-#[doc = "Operational Amplifier Calibration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa0_cal](opa0_cal) module"]
+#[doc = "Operational Amplifier Calibration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa0_cal](opa0_cal) module"]
 pub type OPA0_CAL = crate::Reg<u32, _OPA0_CAL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -279,7 +279,7 @@ impl crate::Readable for OPA0_CAL {}
 impl crate::Writable for OPA0_CAL {}
 #[doc = "Operational Amplifier Calibration Register"]
 pub mod opa0_cal;
-#[doc = "Operational Amplifier APORT Request Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa1_aportreq](opa1_aportreq) module"]
+#[doc = "Operational Amplifier APORT Request Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa1_aportreq](opa1_aportreq) module"]
 pub type OPA1_APORTREQ = crate::Reg<u32, _OPA1_APORTREQ>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -288,7 +288,7 @@ pub struct _OPA1_APORTREQ;
 impl crate::Readable for OPA1_APORTREQ {}
 #[doc = "Operational Amplifier APORT Request Status Register"]
 pub mod opa1_aportreq;
-#[doc = "Operational Amplifier APORT Conflict Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa1_aportconflict](opa1_aportconflict) module"]
+#[doc = "Operational Amplifier APORT Conflict Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa1_aportconflict](opa1_aportconflict) module"]
 pub type OPA1_APORTCONFLICT = crate::Reg<u32, _OPA1_APORTCONFLICT>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -297,7 +297,7 @@ pub struct _OPA1_APORTCONFLICT;
 impl crate::Readable for OPA1_APORTCONFLICT {}
 #[doc = "Operational Amplifier APORT Conflict Status Register"]
 pub mod opa1_aportconflict;
-#[doc = "Operational Amplifier Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa1_ctrl](opa1_ctrl) module"]
+#[doc = "Operational Amplifier Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa1_ctrl](opa1_ctrl) module"]
 pub type OPA1_CTRL = crate::Reg<u32, _OPA1_CTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -308,7 +308,7 @@ impl crate::Readable for OPA1_CTRL {}
 impl crate::Writable for OPA1_CTRL {}
 #[doc = "Operational Amplifier Control Register"]
 pub mod opa1_ctrl;
-#[doc = "Operational Amplifier Timer Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa1_timer](opa1_timer) module"]
+#[doc = "Operational Amplifier Timer Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa1_timer](opa1_timer) module"]
 pub type OPA1_TIMER = crate::Reg<u32, _OPA1_TIMER>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -319,7 +319,7 @@ impl crate::Readable for OPA1_TIMER {}
 impl crate::Writable for OPA1_TIMER {}
 #[doc = "Operational Amplifier Timer Control Register"]
 pub mod opa1_timer;
-#[doc = "Operational Amplifier Mux Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa1_mux](opa1_mux) module"]
+#[doc = "Operational Amplifier Mux Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa1_mux](opa1_mux) module"]
 pub type OPA1_MUX = crate::Reg<u32, _OPA1_MUX>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -330,7 +330,7 @@ impl crate::Readable for OPA1_MUX {}
 impl crate::Writable for OPA1_MUX {}
 #[doc = "Operational Amplifier Mux Configuration Register"]
 pub mod opa1_mux;
-#[doc = "Operational Amplifier Output Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa1_out](opa1_out) module"]
+#[doc = "Operational Amplifier Output Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa1_out](opa1_out) module"]
 pub type OPA1_OUT = crate::Reg<u32, _OPA1_OUT>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -341,7 +341,7 @@ impl crate::Readable for OPA1_OUT {}
 impl crate::Writable for OPA1_OUT {}
 #[doc = "Operational Amplifier Output Configuration Register"]
 pub mod opa1_out;
-#[doc = "Operational Amplifier Calibration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa1_cal](opa1_cal) module"]
+#[doc = "Operational Amplifier Calibration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa1_cal](opa1_cal) module"]
 pub type OPA1_CAL = crate::Reg<u32, _OPA1_CAL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -352,7 +352,7 @@ impl crate::Readable for OPA1_CAL {}
 impl crate::Writable for OPA1_CAL {}
 #[doc = "Operational Amplifier Calibration Register"]
 pub mod opa1_cal;
-#[doc = "Operational Amplifier APORT Request Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa2_aportreq](opa2_aportreq) module"]
+#[doc = "Operational Amplifier APORT Request Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa2_aportreq](opa2_aportreq) module"]
 pub type OPA2_APORTREQ = crate::Reg<u32, _OPA2_APORTREQ>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -361,7 +361,7 @@ pub struct _OPA2_APORTREQ;
 impl crate::Readable for OPA2_APORTREQ {}
 #[doc = "Operational Amplifier APORT Request Status Register"]
 pub mod opa2_aportreq;
-#[doc = "Operational Amplifier APORT Conflict Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa2_aportconflict](opa2_aportconflict) module"]
+#[doc = "Operational Amplifier APORT Conflict Status Register\n\nThis register you can [`read`](crate::generic::Reg::read). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa2_aportconflict](opa2_aportconflict) module"]
 pub type OPA2_APORTCONFLICT = crate::Reg<u32, _OPA2_APORTCONFLICT>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -370,7 +370,7 @@ pub struct _OPA2_APORTCONFLICT;
 impl crate::Readable for OPA2_APORTCONFLICT {}
 #[doc = "Operational Amplifier APORT Conflict Status Register"]
 pub mod opa2_aportconflict;
-#[doc = "Operational Amplifier Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa2_ctrl](opa2_ctrl) module"]
+#[doc = "Operational Amplifier Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa2_ctrl](opa2_ctrl) module"]
 pub type OPA2_CTRL = crate::Reg<u32, _OPA2_CTRL>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -381,7 +381,7 @@ impl crate::Readable for OPA2_CTRL {}
 impl crate::Writable for OPA2_CTRL {}
 #[doc = "Operational Amplifier Control Register"]
 pub mod opa2_ctrl;
-#[doc = "Operational Amplifier Timer Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa2_timer](opa2_timer) module"]
+#[doc = "Operational Amplifier Timer Control Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa2_timer](opa2_timer) module"]
 pub type OPA2_TIMER = crate::Reg<u32, _OPA2_TIMER>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -392,7 +392,7 @@ impl crate::Readable for OPA2_TIMER {}
 impl crate::Writable for OPA2_TIMER {}
 #[doc = "Operational Amplifier Timer Control Register"]
 pub mod opa2_timer;
-#[doc = "Operational Amplifier Mux Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa2_mux](opa2_mux) module"]
+#[doc = "Operational Amplifier Mux Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa2_mux](opa2_mux) module"]
 pub type OPA2_MUX = crate::Reg<u32, _OPA2_MUX>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -403,7 +403,7 @@ impl crate::Readable for OPA2_MUX {}
 impl crate::Writable for OPA2_MUX {}
 #[doc = "Operational Amplifier Mux Configuration Register"]
 pub mod opa2_mux;
-#[doc = "Operational Amplifier Output Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa2_out](opa2_out) module"]
+#[doc = "Operational Amplifier Output Configuration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa2_out](opa2_out) module"]
 pub type OPA2_OUT = crate::Reg<u32, _OPA2_OUT>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -414,7 +414,7 @@ impl crate::Readable for OPA2_OUT {}
 impl crate::Writable for OPA2_OUT {}
 #[doc = "Operational Amplifier Output Configuration Register"]
 pub mod opa2_out;
-#[doc = "Operational Amplifier Calibration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about avaliable fields see [opa2_cal](opa2_cal) module"]
+#[doc = "Operational Amplifier Calibration Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [opa2_cal](opa2_cal) module"]
 pub type OPA2_CAL = crate::Reg<u32, _OPA2_CAL>;
 #[allow(missing_docs)]
 #[doc(hidden)]

@@ -1,7 +1,25 @@
-#![doc = "Peripheral access API for EFM32PG12 microcontrollers (generated using svd2rust v0.16.1)\n\nYou can find an overview of the API [here].\n\n[here]: https://docs.rs/svd2rust/0.16.1/svd2rust/#peripheral-api"]
+#![doc = "Peripheral access API for EFM32PG12 microcontrollers (generated using svd2rust v0.17.0)\n\nYou can find an overview of the API [here].\n\n[here]: https://docs.rs/svd2rust/0.17.0/svd2rust/#peripheral-api"]
+#![deny(const_err)]
+#![deny(dead_code)]
+#![deny(improper_ctypes)]
+#![deny(legacy_directory_ownership)]
 #![deny(missing_docs)]
-#![deny(warnings)]
+#![deny(no_mangle_generic_items)]
+#![deny(non_shorthand_field_patterns)]
+#![deny(overflowing_literals)]
+#![deny(path_statements)]
+#![deny(patterns_in_fns_without_body)]
+#![deny(plugin_as_library)]
+#![deny(private_in_public)]
+#![deny(safe_extern_statics)]
+#![deny(unconditional_recursion)]
+#![deny(unions_with_drop_fields)]
+#![deny(unused_allocation)]
+#![deny(unused_comparisons)]
+#![deny(unused_parens)]
+#![deny(while_true)]
 #![allow(non_camel_case_types)]
+#![allow(non_snake_case)]
 #![no_std]
 extern crate bare_metal;
 extern crate cortex_m;
@@ -138,133 +156,93 @@ pub static __INTERRUPTS: [Vector; 50] = [
 ];
 #[doc = r"Enumeration of all the interrupts"]
 #[derive(Copy, Clone, Debug)]
+#[repr(u8)]
 pub enum Interrupt {
     #[doc = "0 - EMU"]
-    EMU,
+    EMU = 0,
     #[doc = "2 - WDOG0"]
-    WDOG0,
+    WDOG0 = 2,
     #[doc = "3 - WDOG1"]
-    WDOG1,
+    WDOG1 = 3,
     #[doc = "9 - LDMA"]
-    LDMA,
+    LDMA = 9,
     #[doc = "10 - GPIO_EVEN"]
-    GPIO_EVEN,
+    GPIO_EVEN = 10,
     #[doc = "11 - TIMER0"]
-    TIMER0,
+    TIMER0 = 11,
     #[doc = "12 - USART0_RX"]
-    USART0_RX,
+    USART0_RX = 12,
     #[doc = "13 - USART0_TX"]
-    USART0_TX,
+    USART0_TX = 13,
     #[doc = "14 - ACMP0"]
-    ACMP0,
+    ACMP0 = 14,
     #[doc = "15 - ADC0"]
-    ADC0,
+    ADC0 = 15,
     #[doc = "16 - IDAC0"]
-    IDAC0,
+    IDAC0 = 16,
     #[doc = "17 - I2C0"]
-    I2C0,
+    I2C0 = 17,
     #[doc = "18 - GPIO_ODD"]
-    GPIO_ODD,
+    GPIO_ODD = 18,
     #[doc = "19 - TIMER1"]
-    TIMER1,
+    TIMER1 = 19,
     #[doc = "20 - USART1_RX"]
-    USART1_RX,
+    USART1_RX = 20,
     #[doc = "21 - USART1_TX"]
-    USART1_TX,
+    USART1_TX = 21,
     #[doc = "22 - LEUART0"]
-    LEUART0,
+    LEUART0 = 22,
     #[doc = "23 - PCNT0"]
-    PCNT0,
+    PCNT0 = 23,
     #[doc = "24 - CMU"]
-    CMU,
+    CMU = 24,
     #[doc = "25 - MSC"]
-    MSC,
+    MSC = 25,
     #[doc = "26 - CRYPTO0"]
-    CRYPTO0,
+    CRYPTO0 = 26,
     #[doc = "27 - LETIMER0"]
-    LETIMER0,
+    LETIMER0 = 27,
     #[doc = "30 - RTCC"]
-    RTCC,
+    RTCC = 30,
     #[doc = "32 - CRYOTIMER"]
-    CRYOTIMER,
+    CRYOTIMER = 32,
     #[doc = "34 - FPUEH"]
-    FPUEH,
+    FPUEH = 34,
     #[doc = "35 - SMU"]
-    SMU,
+    SMU = 35,
     #[doc = "36 - WTIMER0"]
-    WTIMER0,
+    WTIMER0 = 36,
     #[doc = "37 - WTIMER1"]
-    WTIMER1,
+    WTIMER1 = 37,
     #[doc = "38 - PCNT1"]
-    PCNT1,
+    PCNT1 = 38,
     #[doc = "39 - PCNT2"]
-    PCNT2,
+    PCNT2 = 39,
     #[doc = "40 - USART2_RX"]
-    USART2_RX,
+    USART2_RX = 40,
     #[doc = "41 - USART2_TX"]
-    USART2_TX,
+    USART2_TX = 41,
     #[doc = "42 - I2C1"]
-    I2C1,
+    I2C1 = 42,
     #[doc = "43 - USART3_RX"]
-    USART3_RX,
+    USART3_RX = 43,
     #[doc = "44 - USART3_TX"]
-    USART3_TX,
+    USART3_TX = 44,
     #[doc = "45 - VDAC0"]
-    VDAC0,
+    VDAC0 = 45,
     #[doc = "46 - CSEN"]
-    CSEN,
+    CSEN = 46,
     #[doc = "47 - LESENSE"]
-    LESENSE,
+    LESENSE = 47,
     #[doc = "48 - CRYPTO1"]
-    CRYPTO1,
+    CRYPTO1 = 48,
     #[doc = "49 - TRNG0"]
-    TRNG0,
+    TRNG0 = 49,
 }
 unsafe impl bare_metal::Nr for Interrupt {
-    #[inline]
+    #[inline(always)]
     fn nr(&self) -> u8 {
-        match *self {
-            Interrupt::EMU => 0,
-            Interrupt::WDOG0 => 2,
-            Interrupt::WDOG1 => 3,
-            Interrupt::LDMA => 9,
-            Interrupt::GPIO_EVEN => 10,
-            Interrupt::TIMER0 => 11,
-            Interrupt::USART0_RX => 12,
-            Interrupt::USART0_TX => 13,
-            Interrupt::ACMP0 => 14,
-            Interrupt::ADC0 => 15,
-            Interrupt::IDAC0 => 16,
-            Interrupt::I2C0 => 17,
-            Interrupt::GPIO_ODD => 18,
-            Interrupt::TIMER1 => 19,
-            Interrupt::USART1_RX => 20,
-            Interrupt::USART1_TX => 21,
-            Interrupt::LEUART0 => 22,
-            Interrupt::PCNT0 => 23,
-            Interrupt::CMU => 24,
-            Interrupt::MSC => 25,
-            Interrupt::CRYPTO0 => 26,
-            Interrupt::LETIMER0 => 27,
-            Interrupt::RTCC => 30,
-            Interrupt::CRYOTIMER => 32,
-            Interrupt::FPUEH => 34,
-            Interrupt::SMU => 35,
-            Interrupt::WTIMER0 => 36,
-            Interrupt::WTIMER1 => 37,
-            Interrupt::PCNT1 => 38,
-            Interrupt::PCNT2 => 39,
-            Interrupt::USART2_RX => 40,
-            Interrupt::USART2_TX => 41,
-            Interrupt::I2C1 => 42,
-            Interrupt::USART3_RX => 43,
-            Interrupt::USART3_TX => 44,
-            Interrupt::VDAC0 => 45,
-            Interrupt::CSEN => 46,
-            Interrupt::LESENSE => 47,
-            Interrupt::CRYPTO1 => 48,
-            Interrupt::TRNG0 => 49,
-        }
+        *self as u8
     }
 }
 #[cfg(feature = "rt")]
@@ -291,6 +269,7 @@ impl MSC {
 }
 impl Deref for MSC {
     type Target = msc::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*MSC::ptr() }
     }
@@ -311,6 +290,7 @@ impl EMU {
 }
 impl Deref for EMU {
     type Target = emu::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*EMU::ptr() }
     }
@@ -331,6 +311,7 @@ impl RMU {
 }
 impl Deref for RMU {
     type Target = rmu::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*RMU::ptr() }
     }
@@ -351,6 +332,7 @@ impl CMU {
 }
 impl Deref for CMU {
     type Target = cmu::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*CMU::ptr() }
     }
@@ -371,6 +353,7 @@ impl CRYPTO0 {
 }
 impl Deref for CRYPTO0 {
     type Target = crypto0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*CRYPTO0::ptr() }
     }
@@ -391,6 +374,7 @@ impl CRYPTO1 {
 }
 impl Deref for CRYPTO1 {
     type Target = crypto0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*CRYPTO1::ptr() }
     }
@@ -409,6 +393,7 @@ impl GPIO {
 }
 impl Deref for GPIO {
     type Target = gpio::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*GPIO::ptr() }
     }
@@ -429,6 +414,7 @@ impl PRS {
 }
 impl Deref for PRS {
     type Target = prs::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*PRS::ptr() }
     }
@@ -449,6 +435,7 @@ impl LDMA {
 }
 impl Deref for LDMA {
     type Target = ldma::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*LDMA::ptr() }
     }
@@ -469,6 +456,7 @@ impl FPUEH {
 }
 impl Deref for FPUEH {
     type Target = fpueh::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*FPUEH::ptr() }
     }
@@ -489,6 +477,7 @@ impl GPCRC {
 }
 impl Deref for GPCRC {
     type Target = gpcrc::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*GPCRC::ptr() }
     }
@@ -509,6 +498,7 @@ impl TIMER0 {
 }
 impl Deref for TIMER0 {
     type Target = timer0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*TIMER0::ptr() }
     }
@@ -529,6 +519,7 @@ impl TIMER1 {
 }
 impl Deref for TIMER1 {
     type Target = timer0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*TIMER1::ptr() }
     }
@@ -547,6 +538,7 @@ impl WTIMER0 {
 }
 impl Deref for WTIMER0 {
     type Target = wtimer0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*WTIMER0::ptr() }
     }
@@ -567,6 +559,7 @@ impl WTIMER1 {
 }
 impl Deref for WTIMER1 {
     type Target = wtimer0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*WTIMER1::ptr() }
     }
@@ -585,6 +578,7 @@ impl USART0 {
 }
 impl Deref for USART0 {
     type Target = usart0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*USART0::ptr() }
     }
@@ -605,6 +599,7 @@ impl USART1 {
 }
 impl Deref for USART1 {
     type Target = usart0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*USART1::ptr() }
     }
@@ -623,6 +618,7 @@ impl USART2 {
 }
 impl Deref for USART2 {
     type Target = usart0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*USART2::ptr() }
     }
@@ -641,6 +637,7 @@ impl USART3 {
 }
 impl Deref for USART3 {
     type Target = usart0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*USART3::ptr() }
     }
@@ -659,6 +656,7 @@ impl LEUART0 {
 }
 impl Deref for LEUART0 {
     type Target = leuart0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*LEUART0::ptr() }
     }
@@ -679,6 +677,7 @@ impl LETIMER0 {
 }
 impl Deref for LETIMER0 {
     type Target = letimer0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*LETIMER0::ptr() }
     }
@@ -699,6 +698,7 @@ impl CRYOTIMER {
 }
 impl Deref for CRYOTIMER {
     type Target = cryotimer::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*CRYOTIMER::ptr() }
     }
@@ -719,6 +719,7 @@ impl PCNT0 {
 }
 impl Deref for PCNT0 {
     type Target = pcnt0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*PCNT0::ptr() }
     }
@@ -739,6 +740,7 @@ impl PCNT1 {
 }
 impl Deref for PCNT1 {
     type Target = pcnt0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*PCNT1::ptr() }
     }
@@ -757,6 +759,7 @@ impl PCNT2 {
 }
 impl Deref for PCNT2 {
     type Target = pcnt0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*PCNT2::ptr() }
     }
@@ -775,6 +778,7 @@ impl I2C0 {
 }
 impl Deref for I2C0 {
     type Target = i2c0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*I2C0::ptr() }
     }
@@ -795,6 +799,7 @@ impl I2C1 {
 }
 impl Deref for I2C1 {
     type Target = i2c0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*I2C1::ptr() }
     }
@@ -813,6 +818,7 @@ impl ADC0 {
 }
 impl Deref for ADC0 {
     type Target = adc0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*ADC0::ptr() }
     }
@@ -833,6 +839,7 @@ impl ACMP0 {
 }
 impl Deref for ACMP0 {
     type Target = acmp0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*ACMP0::ptr() }
     }
@@ -853,6 +860,7 @@ impl ACMP1 {
 }
 impl Deref for ACMP1 {
     type Target = acmp0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*ACMP1::ptr() }
     }
@@ -871,6 +879,7 @@ impl IDAC0 {
 }
 impl Deref for IDAC0 {
     type Target = idac0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*IDAC0::ptr() }
     }
@@ -891,6 +900,7 @@ impl VDAC0 {
 }
 impl Deref for VDAC0 {
     type Target = vdac0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*VDAC0::ptr() }
     }
@@ -911,6 +921,7 @@ impl CSEN {
 }
 impl Deref for CSEN {
     type Target = csen::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*CSEN::ptr() }
     }
@@ -931,6 +942,7 @@ impl LESENSE {
 }
 impl Deref for LESENSE {
     type Target = lesense::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*LESENSE::ptr() }
     }
@@ -951,6 +963,7 @@ impl RTCC {
 }
 impl Deref for RTCC {
     type Target = rtcc::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*RTCC::ptr() }
     }
@@ -971,6 +984,7 @@ impl WDOG0 {
 }
 impl Deref for WDOG0 {
     type Target = wdog0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*WDOG0::ptr() }
     }
@@ -991,6 +1005,7 @@ impl WDOG1 {
 }
 impl Deref for WDOG1 {
     type Target = wdog0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*WDOG1::ptr() }
     }
@@ -1009,6 +1024,7 @@ impl ETM {
 }
 impl Deref for ETM {
     type Target = etm::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*ETM::ptr() }
     }
@@ -1029,6 +1045,7 @@ impl SMU {
 }
 impl Deref for SMU {
     type Target = smu::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*SMU::ptr() }
     }
@@ -1049,6 +1066,7 @@ impl TRNG0 {
 }
 impl Deref for TRNG0 {
     type Target = trng0::RegisterBlock;
+    #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*TRNG0::ptr() }
     }
@@ -1154,6 +1172,7 @@ impl Peripherals {
         })
     }
     #[doc = r"Unchecked version of `Peripherals::take`"]
+    #[inline]
     pub unsafe fn steal() -> Self {
         DEVICE_PERIPHERALS = true;
         Peripherals {

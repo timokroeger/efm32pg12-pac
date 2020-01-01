@@ -12,25 +12,21 @@ impl crate::ResetValue for super::ADCCTRL {
 }
 #[doc = "ADC0 Clock Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum ADC0CLKSEL_A {
     #[doc = "0: ADC0 is not clocked"]
-    DISABLED,
+    DISABLED = 0,
     #[doc = "1: AUXHFRCO is clocking ADC0"]
-    AUXHFRCO,
+    AUXHFRCO = 1,
     #[doc = "2: HFXO is clocking ADC0"]
-    HFXO,
+    HFXO = 2,
     #[doc = "3: HFSRCCLK is clocking ADC0"]
-    HFSRCCLK,
+    HFSRCCLK = 3,
 }
 impl From<ADC0CLKSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: ADC0CLKSEL_A) -> Self {
-        match variant {
-            ADC0CLKSEL_A::DISABLED => 0,
-            ADC0CLKSEL_A::AUXHFRCO => 1,
-            ADC0CLKSEL_A::HFXO => 2,
-            ADC0CLKSEL_A::HFSRCCLK => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `ADC0CLKSEL`"]

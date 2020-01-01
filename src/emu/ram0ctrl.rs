@@ -12,28 +12,23 @@ impl crate::ResetValue for super::RAM0CTRL {
 }
 #[doc = "RAM0 Blockset Power-down\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum RAMPOWERDOWN_A {
     #[doc = "0: None of the RAM blocks powered down"]
-    NONE,
+    NONE = 0,
     #[doc = "8: Power down RAM blocks 4 and above"]
-    BLK4,
+    BLK4 = 8,
     #[doc = "12: Power down RAM blocks 3 and above"]
-    BLK3TO4,
+    BLK3TO4 = 12,
     #[doc = "14: Power down RAM blocks 2 and above"]
-    BLK2TO4,
+    BLK2TO4 = 14,
     #[doc = "15: Power down RAM blocks 1 and above"]
-    BLK1TO4,
+    BLK1TO4 = 15,
 }
 impl From<RAMPOWERDOWN_A> for u8 {
     #[inline(always)]
     fn from(variant: RAMPOWERDOWN_A) -> Self {
-        match variant {
-            RAMPOWERDOWN_A::NONE => 0,
-            RAMPOWERDOWN_A::BLK4 => 8,
-            RAMPOWERDOWN_A::BLK3TO4 => 12,
-            RAMPOWERDOWN_A::BLK2TO4 => 14,
-            RAMPOWERDOWN_A::BLK1TO4 => 15,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `RAMPOWERDOWN`"]

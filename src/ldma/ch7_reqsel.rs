@@ -26,73 +26,53 @@ impl<'a> SIGSEL_W<'a> {
 }
 #[doc = "Source Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum SOURCESEL_A {
     #[doc = "0: No source selected"]
-    NONE,
+    NONE = 0,
     #[doc = "1: Peripheral Reflex System"]
-    PRS,
+    PRS = 1,
     #[doc = "8: Analog to Digital Converter 0"]
-    ADC0,
+    ADC0 = 8,
     #[doc = "10: Digital to Analog Converter 0"]
-    VDAC0,
+    VDAC0 = 10,
     #[doc = "12: Universal Synchronous/Asynchronous Receiver/Transmitter 0"]
-    USART0,
+    USART0 = 12,
     #[doc = "13: Universal Synchronous/Asynchronous Receiver/Transmitter 1"]
-    USART1,
+    USART1 = 13,
     #[doc = "14: Universal Synchronous/Asynchronous Receiver/Transmitter 2"]
-    USART2,
+    USART2 = 14,
     #[doc = "15: Universal Synchronous/Asynchronous Receiver/Transmitter 3"]
-    USART3,
+    USART3 = 15,
     #[doc = "16: Low Energy UART 0"]
-    LEUART0,
+    LEUART0 = 16,
     #[doc = "20: I2C 0"]
-    I2C0,
+    I2C0 = 20,
     #[doc = "21: I2C 1"]
-    I2C1,
+    I2C1 = 21,
     #[doc = "24: Timer 0"]
-    TIMER0,
+    TIMER0 = 24,
     #[doc = "25: Timer 1"]
-    TIMER1,
+    TIMER1 = 25,
     #[doc = "26: Wide Timer 0"]
-    WTIMER0,
+    WTIMER0 = 26,
     #[doc = "27: Wide Timer 1"]
-    WTIMER1,
+    WTIMER1 = 27,
     #[doc = "48: Memory System Controller"]
-    MSC,
+    MSC = 48,
     #[doc = "49: Advanced Encryption Standard Accelerator 0"]
-    CRYPTO0,
+    CRYPTO0 = 49,
     #[doc = "50: Capacitive touch sense module"]
-    CSEN,
+    CSEN = 50,
     #[doc = "51: Low Energy Sensor Interface"]
-    LESENSE,
+    LESENSE = 51,
     #[doc = "52: Advanced Encryption Standard Accelerator 1"]
-    CRYPTO1,
+    CRYPTO1 = 52,
 }
 impl From<SOURCESEL_A> for u8 {
     #[inline(always)]
     fn from(variant: SOURCESEL_A) -> Self {
-        match variant {
-            SOURCESEL_A::NONE => 0,
-            SOURCESEL_A::PRS => 1,
-            SOURCESEL_A::ADC0 => 8,
-            SOURCESEL_A::VDAC0 => 10,
-            SOURCESEL_A::USART0 => 12,
-            SOURCESEL_A::USART1 => 13,
-            SOURCESEL_A::USART2 => 14,
-            SOURCESEL_A::USART3 => 15,
-            SOURCESEL_A::LEUART0 => 16,
-            SOURCESEL_A::I2C0 => 20,
-            SOURCESEL_A::I2C1 => 21,
-            SOURCESEL_A::TIMER0 => 24,
-            SOURCESEL_A::TIMER1 => 25,
-            SOURCESEL_A::WTIMER0 => 26,
-            SOURCESEL_A::WTIMER1 => 27,
-            SOURCESEL_A::MSC => 48,
-            SOURCESEL_A::CRYPTO0 => 49,
-            SOURCESEL_A::CSEN => 50,
-            SOURCESEL_A::LESENSE => 51,
-            SOURCESEL_A::CRYPTO1 => 52,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `SOURCESEL`"]

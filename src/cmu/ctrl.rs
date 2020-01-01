@@ -12,52 +12,39 @@ impl crate::ResetValue for super::CTRL {
 }
 #[doc = "Clock Output Select 0\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum CLKOUTSEL0_A {
     #[doc = "0: Disabled"]
-    DISABLED,
+    DISABLED = 0,
     #[doc = "1: ULFRCO (directly from oscillator)"]
-    ULFRCO,
+    ULFRCO = 1,
     #[doc = "2: LFRCO (directly from oscillator)"]
-    LFRCO,
+    LFRCO = 2,
     #[doc = "3: LFXO (directly from oscillator)"]
-    LFXO,
+    LFXO = 3,
     #[doc = "6: HFXO (directly from oscillator)"]
-    HFXO,
+    HFXO = 6,
     #[doc = "7: HFEXPCLK"]
-    HFEXPCLK,
+    HFEXPCLK = 7,
     #[doc = "9: ULFRCO (qualified)"]
-    ULFRCOQ,
+    ULFRCOQ = 9,
     #[doc = "10: LFRCO (qualified)"]
-    LFRCOQ,
+    LFRCOQ = 10,
     #[doc = "11: LFXO (qualified)"]
-    LFXOQ,
+    LFXOQ = 11,
     #[doc = "12: HFRCO (qualified)"]
-    HFRCOQ,
+    HFRCOQ = 12,
     #[doc = "13: AUXHFRCO (qualified)"]
-    AUXHFRCOQ,
+    AUXHFRCOQ = 13,
     #[doc = "14: HFXO (qualified)"]
-    HFXOQ,
+    HFXOQ = 14,
     #[doc = "15: HFSRCCLK"]
-    HFSRCCLK,
+    HFSRCCLK = 15,
 }
 impl From<CLKOUTSEL0_A> for u8 {
     #[inline(always)]
     fn from(variant: CLKOUTSEL0_A) -> Self {
-        match variant {
-            CLKOUTSEL0_A::DISABLED => 0,
-            CLKOUTSEL0_A::ULFRCO => 1,
-            CLKOUTSEL0_A::LFRCO => 2,
-            CLKOUTSEL0_A::LFXO => 3,
-            CLKOUTSEL0_A::HFXO => 6,
-            CLKOUTSEL0_A::HFEXPCLK => 7,
-            CLKOUTSEL0_A::ULFRCOQ => 9,
-            CLKOUTSEL0_A::LFRCOQ => 10,
-            CLKOUTSEL0_A::LFXOQ => 11,
-            CLKOUTSEL0_A::HFRCOQ => 12,
-            CLKOUTSEL0_A::AUXHFRCOQ => 13,
-            CLKOUTSEL0_A::HFXOQ => 14,
-            CLKOUTSEL0_A::HFSRCCLK => 15,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `CLKOUTSEL0`"]
@@ -234,52 +221,39 @@ impl<'a> CLKOUTSEL0_W<'a> {
 }
 #[doc = "Clock Output Select 1\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum CLKOUTSEL1_A {
     #[doc = "0: Disabled"]
-    DISABLED,
+    DISABLED = 0,
     #[doc = "1: ULFRCO (directly from oscillator)"]
-    ULFRCO,
+    ULFRCO = 1,
     #[doc = "2: LFRCO (directly from oscillator)"]
-    LFRCO,
+    LFRCO = 2,
     #[doc = "3: LFXO (directly from oscillator)"]
-    LFXO,
+    LFXO = 3,
     #[doc = "6: HFXO (directly from oscillator)"]
-    HFXO,
+    HFXO = 6,
     #[doc = "7: HFEXPCLK"]
-    HFEXPCLK,
+    HFEXPCLK = 7,
     #[doc = "9: ULFRCO (qualified)"]
-    ULFRCOQ,
+    ULFRCOQ = 9,
     #[doc = "10: LFRCO (qualified)"]
-    LFRCOQ,
+    LFRCOQ = 10,
     #[doc = "11: LFXO (qualified)"]
-    LFXOQ,
+    LFXOQ = 11,
     #[doc = "12: HFRCO (qualified)"]
-    HFRCOQ,
+    HFRCOQ = 12,
     #[doc = "13: AUXHFRCO (qualified)"]
-    AUXHFRCOQ,
+    AUXHFRCOQ = 13,
     #[doc = "14: HFXO (qualified)"]
-    HFXOQ,
+    HFXOQ = 14,
     #[doc = "15: HFSRCCLK"]
-    HFSRCCLK,
+    HFSRCCLK = 15,
 }
 impl From<CLKOUTSEL1_A> for u8 {
     #[inline(always)]
     fn from(variant: CLKOUTSEL1_A) -> Self {
-        match variant {
-            CLKOUTSEL1_A::DISABLED => 0,
-            CLKOUTSEL1_A::ULFRCO => 1,
-            CLKOUTSEL1_A::LFRCO => 2,
-            CLKOUTSEL1_A::LFXO => 3,
-            CLKOUTSEL1_A::HFXO => 6,
-            CLKOUTSEL1_A::HFEXPCLK => 7,
-            CLKOUTSEL1_A::ULFRCOQ => 9,
-            CLKOUTSEL1_A::LFRCOQ => 10,
-            CLKOUTSEL1_A::LFXOQ => 11,
-            CLKOUTSEL1_A::HFRCOQ => 12,
-            CLKOUTSEL1_A::AUXHFRCOQ => 13,
-            CLKOUTSEL1_A::HFXOQ => 14,
-            CLKOUTSEL1_A::HFSRCCLK => 15,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `CLKOUTSEL1`"]

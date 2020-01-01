@@ -12,46 +12,35 @@ impl crate::ResetValue for super::HFXOTIMEOUTCTRL {
 }
 #[doc = "Wait Duration in HFXO Startup Enable Wait State\n\nValue on reset: 7"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum STARTUPTIMEOUT_A {
     #[doc = "0: Timeout period of 2 cycles"]
-    _2CYCLES,
+    _2CYCLES = 0,
     #[doc = "1: Timeout period of 4 cycles"]
-    _4CYCLES,
+    _4CYCLES = 1,
     #[doc = "2: Timeout period of 16 cycles"]
-    _16CYCLES,
+    _16CYCLES = 2,
     #[doc = "3: Timeout period of 32 cycles"]
-    _32CYCLES,
+    _32CYCLES = 3,
     #[doc = "4: Timeout period of 256 cycles"]
-    _256CYCLES,
+    _256CYCLES = 4,
     #[doc = "5: Timeout period of 1024 cycles"]
-    _1KCYCLES,
+    _1KCYCLES = 5,
     #[doc = "6: Timeout period of 2048 cycles"]
-    _2KCYCLES,
+    _2KCYCLES = 6,
     #[doc = "7: Timeout period of 4096 cycles"]
-    _4KCYCLES,
+    _4KCYCLES = 7,
     #[doc = "8: Timeout period of 8192 cycles"]
-    _8KCYCLES,
+    _8KCYCLES = 8,
     #[doc = "9: Timeout period of 16384 cycles"]
-    _16KCYCLES,
+    _16KCYCLES = 9,
     #[doc = "10: Timeout period of 32768 cycles"]
-    _32KCYCLES,
+    _32KCYCLES = 10,
 }
 impl From<STARTUPTIMEOUT_A> for u8 {
     #[inline(always)]
     fn from(variant: STARTUPTIMEOUT_A) -> Self {
-        match variant {
-            STARTUPTIMEOUT_A::_2CYCLES => 0,
-            STARTUPTIMEOUT_A::_4CYCLES => 1,
-            STARTUPTIMEOUT_A::_16CYCLES => 2,
-            STARTUPTIMEOUT_A::_32CYCLES => 3,
-            STARTUPTIMEOUT_A::_256CYCLES => 4,
-            STARTUPTIMEOUT_A::_1KCYCLES => 5,
-            STARTUPTIMEOUT_A::_2KCYCLES => 6,
-            STARTUPTIMEOUT_A::_4KCYCLES => 7,
-            STARTUPTIMEOUT_A::_8KCYCLES => 8,
-            STARTUPTIMEOUT_A::_16KCYCLES => 9,
-            STARTUPTIMEOUT_A::_32KCYCLES => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `STARTUPTIMEOUT`"]
@@ -206,46 +195,35 @@ impl<'a> STARTUPTIMEOUT_W<'a> {
 }
 #[doc = "Wait Duration in HFXO Startup Steady Wait State\n\nValue on reset: 6"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum STEADYTIMEOUT_A {
     #[doc = "0: Timeout period of 2 cycles"]
-    _2CYCLES,
+    _2CYCLES = 0,
     #[doc = "1: Timeout period of 4 cycles"]
-    _4CYCLES,
+    _4CYCLES = 1,
     #[doc = "2: Timeout period of 16 cycles"]
-    _16CYCLES,
+    _16CYCLES = 2,
     #[doc = "3: Timeout period of 32 cycles"]
-    _32CYCLES,
+    _32CYCLES = 3,
     #[doc = "4: Timeout period of 256 cycles"]
-    _256CYCLES,
+    _256CYCLES = 4,
     #[doc = "5: Timeout period of 1024 cycles"]
-    _1KCYCLES,
+    _1KCYCLES = 5,
     #[doc = "6: Timeout period of 2048 cycles"]
-    _2KCYCLES,
+    _2KCYCLES = 6,
     #[doc = "7: Timeout period of 4096 cycles"]
-    _4KCYCLES,
+    _4KCYCLES = 7,
     #[doc = "8: Timeout period of 8192 cycles"]
-    _8KCYCLES,
+    _8KCYCLES = 8,
     #[doc = "9: Timeout period of 16384 cycles"]
-    _16KCYCLES,
+    _16KCYCLES = 9,
     #[doc = "10: Timeout period of 32768 cycles"]
-    _32KCYCLES,
+    _32KCYCLES = 10,
 }
 impl From<STEADYTIMEOUT_A> for u8 {
     #[inline(always)]
     fn from(variant: STEADYTIMEOUT_A) -> Self {
-        match variant {
-            STEADYTIMEOUT_A::_2CYCLES => 0,
-            STEADYTIMEOUT_A::_4CYCLES => 1,
-            STEADYTIMEOUT_A::_16CYCLES => 2,
-            STEADYTIMEOUT_A::_32CYCLES => 3,
-            STEADYTIMEOUT_A::_256CYCLES => 4,
-            STEADYTIMEOUT_A::_1KCYCLES => 5,
-            STEADYTIMEOUT_A::_2KCYCLES => 6,
-            STEADYTIMEOUT_A::_4KCYCLES => 7,
-            STEADYTIMEOUT_A::_8KCYCLES => 8,
-            STEADYTIMEOUT_A::_16KCYCLES => 9,
-            STEADYTIMEOUT_A::_32KCYCLES => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `STEADYTIMEOUT`"]
@@ -400,46 +378,35 @@ impl<'a> STEADYTIMEOUT_W<'a> {
 }
 #[doc = "Wait Duration in HFXO Peak Detection Wait State\n\nValue on reset: 10"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum PEAKDETTIMEOUT_A {
     #[doc = "0: Timeout period of 2 cycles"]
-    _2CYCLES,
+    _2CYCLES = 0,
     #[doc = "1: Timeout period of 4 cycles"]
-    _4CYCLES,
+    _4CYCLES = 1,
     #[doc = "2: Timeout period of 16 cycles"]
-    _16CYCLES,
+    _16CYCLES = 2,
     #[doc = "3: Timeout period of 32 cycles"]
-    _32CYCLES,
+    _32CYCLES = 3,
     #[doc = "4: Timeout period of 256 cycles"]
-    _256CYCLES,
+    _256CYCLES = 4,
     #[doc = "5: Timeout period of 1024 cycles"]
-    _1KCYCLES,
+    _1KCYCLES = 5,
     #[doc = "6: Timeout period of 2048 cycles"]
-    _2KCYCLES,
+    _2KCYCLES = 6,
     #[doc = "7: Timeout period of 4096 cycles"]
-    _4KCYCLES,
+    _4KCYCLES = 7,
     #[doc = "8: Timeout period of 8192 cycles"]
-    _8KCYCLES,
+    _8KCYCLES = 8,
     #[doc = "9: Timeout period of 16384 cycles"]
-    _16KCYCLES,
+    _16KCYCLES = 9,
     #[doc = "10: Timeout period of 32768 cycles"]
-    _32KCYCLES,
+    _32KCYCLES = 10,
 }
 impl From<PEAKDETTIMEOUT_A> for u8 {
     #[inline(always)]
     fn from(variant: PEAKDETTIMEOUT_A) -> Self {
-        match variant {
-            PEAKDETTIMEOUT_A::_2CYCLES => 0,
-            PEAKDETTIMEOUT_A::_4CYCLES => 1,
-            PEAKDETTIMEOUT_A::_16CYCLES => 2,
-            PEAKDETTIMEOUT_A::_32CYCLES => 3,
-            PEAKDETTIMEOUT_A::_256CYCLES => 4,
-            PEAKDETTIMEOUT_A::_1KCYCLES => 5,
-            PEAKDETTIMEOUT_A::_2KCYCLES => 6,
-            PEAKDETTIMEOUT_A::_4KCYCLES => 7,
-            PEAKDETTIMEOUT_A::_8KCYCLES => 8,
-            PEAKDETTIMEOUT_A::_16KCYCLES => 9,
-            PEAKDETTIMEOUT_A::_32KCYCLES => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `PEAKDETTIMEOUT`"]
@@ -594,46 +561,35 @@ impl<'a> PEAKDETTIMEOUT_W<'a> {
 }
 #[doc = "Wait Duration in HFXO Shunt Current Optimization Wait State\n\nValue on reset: 2"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum SHUNTOPTTIMEOUT_A {
     #[doc = "0: Timeout period of 2 cycles"]
-    _2CYCLES,
+    _2CYCLES = 0,
     #[doc = "1: Timeout period of 4 cycles"]
-    _4CYCLES,
+    _4CYCLES = 1,
     #[doc = "2: Timeout period of 16 cycles"]
-    _16CYCLES,
+    _16CYCLES = 2,
     #[doc = "3: Timeout period of 32 cycles"]
-    _32CYCLES,
+    _32CYCLES = 3,
     #[doc = "4: Timeout period of 256 cycles"]
-    _256CYCLES,
+    _256CYCLES = 4,
     #[doc = "5: Timeout period of 1024 cycles"]
-    _1KCYCLES,
+    _1KCYCLES = 5,
     #[doc = "6: Timeout period of 2048 cycles"]
-    _2KCYCLES,
+    _2KCYCLES = 6,
     #[doc = "7: Timeout period of 4096 cycles"]
-    _4KCYCLES,
+    _4KCYCLES = 7,
     #[doc = "8: Timeout period of 8192 cycles"]
-    _8KCYCLES,
+    _8KCYCLES = 8,
     #[doc = "9: Timeout period of 16384 cycles"]
-    _16KCYCLES,
+    _16KCYCLES = 9,
     #[doc = "10: Timeout period of 32768 cycles"]
-    _32KCYCLES,
+    _32KCYCLES = 10,
 }
 impl From<SHUNTOPTTIMEOUT_A> for u8 {
     #[inline(always)]
     fn from(variant: SHUNTOPTTIMEOUT_A) -> Self {
-        match variant {
-            SHUNTOPTTIMEOUT_A::_2CYCLES => 0,
-            SHUNTOPTTIMEOUT_A::_4CYCLES => 1,
-            SHUNTOPTTIMEOUT_A::_16CYCLES => 2,
-            SHUNTOPTTIMEOUT_A::_32CYCLES => 3,
-            SHUNTOPTTIMEOUT_A::_256CYCLES => 4,
-            SHUNTOPTTIMEOUT_A::_1KCYCLES => 5,
-            SHUNTOPTTIMEOUT_A::_2KCYCLES => 6,
-            SHUNTOPTTIMEOUT_A::_4KCYCLES => 7,
-            SHUNTOPTTIMEOUT_A::_8KCYCLES => 8,
-            SHUNTOPTTIMEOUT_A::_16KCYCLES => 9,
-            SHUNTOPTTIMEOUT_A::_32KCYCLES => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `SHUNTOPTTIMEOUT`"]

@@ -36,25 +36,21 @@ impl<'a> IREN_W<'a> {
 }
 #[doc = "IrDA TX Pulse Width\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum IRPW_A {
     #[doc = "0: IrDA pulse width is 1/16 for OVS=0 and 1/8 for OVS=1"]
-    ONE,
+    ONE = 0,
     #[doc = "1: IrDA pulse width is 2/16 for OVS=0 and 2/8 for OVS=1"]
-    TWO,
+    TWO = 1,
     #[doc = "2: IrDA pulse width is 3/16 for OVS=0 and 3/8 for OVS=1"]
-    THREE,
+    THREE = 2,
     #[doc = "3: IrDA pulse width is 4/16 for OVS=0 and 4/8 for OVS=1"]
-    FOUR,
+    FOUR = 3,
 }
 impl From<IRPW_A> for u8 {
     #[inline(always)]
     fn from(variant: IRPW_A) -> Self {
-        match variant {
-            IRPW_A::ONE => 0,
-            IRPW_A::TWO => 1,
-            IRPW_A::THREE => 2,
-            IRPW_A::FOUR => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `IRPW`"]
@@ -181,49 +177,37 @@ impl<'a> IRPRSEN_W<'a> {
 }
 #[doc = "IrDA PRS Channel Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum IRPRSSEL_A {
     #[doc = "0: PRS Channel 0 selected"]
-    PRSCH0,
+    PRSCH0 = 0,
     #[doc = "1: PRS Channel 1 selected"]
-    PRSCH1,
+    PRSCH1 = 1,
     #[doc = "2: PRS Channel 2 selected"]
-    PRSCH2,
+    PRSCH2 = 2,
     #[doc = "3: PRS Channel 3 selected"]
-    PRSCH3,
+    PRSCH3 = 3,
     #[doc = "4: PRS Channel 4 selected"]
-    PRSCH4,
+    PRSCH4 = 4,
     #[doc = "5: PRS Channel 5 selected"]
-    PRSCH5,
+    PRSCH5 = 5,
     #[doc = "6: PRS Channel 6 selected"]
-    PRSCH6,
+    PRSCH6 = 6,
     #[doc = "7: PRS Channel 7 selected"]
-    PRSCH7,
+    PRSCH7 = 7,
     #[doc = "8: PRS Channel 8 selected"]
-    PRSCH8,
+    PRSCH8 = 8,
     #[doc = "9: PRS Channel 9 selected"]
-    PRSCH9,
+    PRSCH9 = 9,
     #[doc = "10: PRS Channel 10 selected"]
-    PRSCH10,
+    PRSCH10 = 10,
     #[doc = "11: PRS Channel 11 selected"]
-    PRSCH11,
+    PRSCH11 = 11,
 }
 impl From<IRPRSSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: IRPRSSEL_A) -> Self {
-        match variant {
-            IRPRSSEL_A::PRSCH0 => 0,
-            IRPRSSEL_A::PRSCH1 => 1,
-            IRPRSSEL_A::PRSCH2 => 2,
-            IRPRSSEL_A::PRSCH3 => 3,
-            IRPRSSEL_A::PRSCH4 => 4,
-            IRPRSSEL_A::PRSCH5 => 5,
-            IRPRSSEL_A::PRSCH6 => 6,
-            IRPRSSEL_A::PRSCH7 => 7,
-            IRPRSSEL_A::PRSCH8 => 8,
-            IRPRSSEL_A::PRSCH9 => 9,
-            IRPRSSEL_A::PRSCH10 => 10,
-            IRPRSSEL_A::PRSCH11 => 11,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `IRPRSSEL`"]

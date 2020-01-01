@@ -12,109 +12,77 @@ impl crate::ResetValue for super::ROUTELOC1 {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum CTSLOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
     #[doc = "4: Location 4"]
-    LOC4,
+    LOC4 = 4,
     #[doc = "5: Location 5"]
-    LOC5,
+    LOC5 = 5,
     #[doc = "6: Location 6"]
-    LOC6,
+    LOC6 = 6,
     #[doc = "7: Location 7"]
-    LOC7,
+    LOC7 = 7,
     #[doc = "8: Location 8"]
-    LOC8,
+    LOC8 = 8,
     #[doc = "9: Location 9"]
-    LOC9,
+    LOC9 = 9,
     #[doc = "10: Location 10"]
-    LOC10,
+    LOC10 = 10,
     #[doc = "11: Location 11"]
-    LOC11,
+    LOC11 = 11,
     #[doc = "12: Location 12"]
-    LOC12,
+    LOC12 = 12,
     #[doc = "13: Location 13"]
-    LOC13,
+    LOC13 = 13,
     #[doc = "14: Location 14"]
-    LOC14,
+    LOC14 = 14,
     #[doc = "15: Location 15"]
-    LOC15,
+    LOC15 = 15,
     #[doc = "16: Location 16"]
-    LOC16,
+    LOC16 = 16,
     #[doc = "17: Location 17"]
-    LOC17,
+    LOC17 = 17,
     #[doc = "18: Location 18"]
-    LOC18,
+    LOC18 = 18,
     #[doc = "19: Location 19"]
-    LOC19,
+    LOC19 = 19,
     #[doc = "20: Location 20"]
-    LOC20,
+    LOC20 = 20,
     #[doc = "21: Location 21"]
-    LOC21,
+    LOC21 = 21,
     #[doc = "22: Location 22"]
-    LOC22,
+    LOC22 = 22,
     #[doc = "23: Location 23"]
-    LOC23,
+    LOC23 = 23,
     #[doc = "24: Location 24"]
-    LOC24,
+    LOC24 = 24,
     #[doc = "25: Location 25"]
-    LOC25,
+    LOC25 = 25,
     #[doc = "26: Location 26"]
-    LOC26,
+    LOC26 = 26,
     #[doc = "27: Location 27"]
-    LOC27,
+    LOC27 = 27,
     #[doc = "28: Location 28"]
-    LOC28,
+    LOC28 = 28,
     #[doc = "29: Location 29"]
-    LOC29,
+    LOC29 = 29,
     #[doc = "30: Location 30"]
-    LOC30,
+    LOC30 = 30,
     #[doc = "31: Location 31"]
-    LOC31,
+    LOC31 = 31,
 }
 impl From<CTSLOC_A> for u8 {
     #[inline(always)]
     fn from(variant: CTSLOC_A) -> Self {
-        match variant {
-            CTSLOC_A::LOC0 => 0,
-            CTSLOC_A::LOC1 => 1,
-            CTSLOC_A::LOC2 => 2,
-            CTSLOC_A::LOC3 => 3,
-            CTSLOC_A::LOC4 => 4,
-            CTSLOC_A::LOC5 => 5,
-            CTSLOC_A::LOC6 => 6,
-            CTSLOC_A::LOC7 => 7,
-            CTSLOC_A::LOC8 => 8,
-            CTSLOC_A::LOC9 => 9,
-            CTSLOC_A::LOC10 => 10,
-            CTSLOC_A::LOC11 => 11,
-            CTSLOC_A::LOC12 => 12,
-            CTSLOC_A::LOC13 => 13,
-            CTSLOC_A::LOC14 => 14,
-            CTSLOC_A::LOC15 => 15,
-            CTSLOC_A::LOC16 => 16,
-            CTSLOC_A::LOC17 => 17,
-            CTSLOC_A::LOC18 => 18,
-            CTSLOC_A::LOC19 => 19,
-            CTSLOC_A::LOC20 => 20,
-            CTSLOC_A::LOC21 => 21,
-            CTSLOC_A::LOC22 => 22,
-            CTSLOC_A::LOC23 => 23,
-            CTSLOC_A::LOC24 => 24,
-            CTSLOC_A::LOC25 => 25,
-            CTSLOC_A::LOC26 => 26,
-            CTSLOC_A::LOC27 => 27,
-            CTSLOC_A::LOC28 => 28,
-            CTSLOC_A::LOC29 => 29,
-            CTSLOC_A::LOC30 => 30,
-            CTSLOC_A::LOC31 => 31,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `CTSLOC`"]
@@ -500,109 +468,77 @@ impl<'a> CTSLOC_W<'a> {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum RTSLOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
     #[doc = "4: Location 4"]
-    LOC4,
+    LOC4 = 4,
     #[doc = "5: Location 5"]
-    LOC5,
+    LOC5 = 5,
     #[doc = "6: Location 6"]
-    LOC6,
+    LOC6 = 6,
     #[doc = "7: Location 7"]
-    LOC7,
+    LOC7 = 7,
     #[doc = "8: Location 8"]
-    LOC8,
+    LOC8 = 8,
     #[doc = "9: Location 9"]
-    LOC9,
+    LOC9 = 9,
     #[doc = "10: Location 10"]
-    LOC10,
+    LOC10 = 10,
     #[doc = "11: Location 11"]
-    LOC11,
+    LOC11 = 11,
     #[doc = "12: Location 12"]
-    LOC12,
+    LOC12 = 12,
     #[doc = "13: Location 13"]
-    LOC13,
+    LOC13 = 13,
     #[doc = "14: Location 14"]
-    LOC14,
+    LOC14 = 14,
     #[doc = "15: Location 15"]
-    LOC15,
+    LOC15 = 15,
     #[doc = "16: Location 16"]
-    LOC16,
+    LOC16 = 16,
     #[doc = "17: Location 17"]
-    LOC17,
+    LOC17 = 17,
     #[doc = "18: Location 18"]
-    LOC18,
+    LOC18 = 18,
     #[doc = "19: Location 19"]
-    LOC19,
+    LOC19 = 19,
     #[doc = "20: Location 20"]
-    LOC20,
+    LOC20 = 20,
     #[doc = "21: Location 21"]
-    LOC21,
+    LOC21 = 21,
     #[doc = "22: Location 22"]
-    LOC22,
+    LOC22 = 22,
     #[doc = "23: Location 23"]
-    LOC23,
+    LOC23 = 23,
     #[doc = "24: Location 24"]
-    LOC24,
+    LOC24 = 24,
     #[doc = "25: Location 25"]
-    LOC25,
+    LOC25 = 25,
     #[doc = "26: Location 26"]
-    LOC26,
+    LOC26 = 26,
     #[doc = "27: Location 27"]
-    LOC27,
+    LOC27 = 27,
     #[doc = "28: Location 28"]
-    LOC28,
+    LOC28 = 28,
     #[doc = "29: Location 29"]
-    LOC29,
+    LOC29 = 29,
     #[doc = "30: Location 30"]
-    LOC30,
+    LOC30 = 30,
     #[doc = "31: Location 31"]
-    LOC31,
+    LOC31 = 31,
 }
 impl From<RTSLOC_A> for u8 {
     #[inline(always)]
     fn from(variant: RTSLOC_A) -> Self {
-        match variant {
-            RTSLOC_A::LOC0 => 0,
-            RTSLOC_A::LOC1 => 1,
-            RTSLOC_A::LOC2 => 2,
-            RTSLOC_A::LOC3 => 3,
-            RTSLOC_A::LOC4 => 4,
-            RTSLOC_A::LOC5 => 5,
-            RTSLOC_A::LOC6 => 6,
-            RTSLOC_A::LOC7 => 7,
-            RTSLOC_A::LOC8 => 8,
-            RTSLOC_A::LOC9 => 9,
-            RTSLOC_A::LOC10 => 10,
-            RTSLOC_A::LOC11 => 11,
-            RTSLOC_A::LOC12 => 12,
-            RTSLOC_A::LOC13 => 13,
-            RTSLOC_A::LOC14 => 14,
-            RTSLOC_A::LOC15 => 15,
-            RTSLOC_A::LOC16 => 16,
-            RTSLOC_A::LOC17 => 17,
-            RTSLOC_A::LOC18 => 18,
-            RTSLOC_A::LOC19 => 19,
-            RTSLOC_A::LOC20 => 20,
-            RTSLOC_A::LOC21 => 21,
-            RTSLOC_A::LOC22 => 22,
-            RTSLOC_A::LOC23 => 23,
-            RTSLOC_A::LOC24 => 24,
-            RTSLOC_A::LOC25 => 25,
-            RTSLOC_A::LOC26 => 26,
-            RTSLOC_A::LOC27 => 27,
-            RTSLOC_A::LOC28 => 28,
-            RTSLOC_A::LOC29 => 29,
-            RTSLOC_A::LOC30 => 30,
-            RTSLOC_A::LOC31 => 31,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `RTSLOC`"]

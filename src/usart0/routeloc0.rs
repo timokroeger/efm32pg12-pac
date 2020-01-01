@@ -12,109 +12,77 @@ impl crate::ResetValue for super::ROUTELOC0 {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum RXLOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
     #[doc = "4: Location 4"]
-    LOC4,
+    LOC4 = 4,
     #[doc = "5: Location 5"]
-    LOC5,
+    LOC5 = 5,
     #[doc = "6: Location 6"]
-    LOC6,
+    LOC6 = 6,
     #[doc = "7: Location 7"]
-    LOC7,
+    LOC7 = 7,
     #[doc = "8: Location 8"]
-    LOC8,
+    LOC8 = 8,
     #[doc = "9: Location 9"]
-    LOC9,
+    LOC9 = 9,
     #[doc = "10: Location 10"]
-    LOC10,
+    LOC10 = 10,
     #[doc = "11: Location 11"]
-    LOC11,
+    LOC11 = 11,
     #[doc = "12: Location 12"]
-    LOC12,
+    LOC12 = 12,
     #[doc = "13: Location 13"]
-    LOC13,
+    LOC13 = 13,
     #[doc = "14: Location 14"]
-    LOC14,
+    LOC14 = 14,
     #[doc = "15: Location 15"]
-    LOC15,
+    LOC15 = 15,
     #[doc = "16: Location 16"]
-    LOC16,
+    LOC16 = 16,
     #[doc = "17: Location 17"]
-    LOC17,
+    LOC17 = 17,
     #[doc = "18: Location 18"]
-    LOC18,
+    LOC18 = 18,
     #[doc = "19: Location 19"]
-    LOC19,
+    LOC19 = 19,
     #[doc = "20: Location 20"]
-    LOC20,
+    LOC20 = 20,
     #[doc = "21: Location 21"]
-    LOC21,
+    LOC21 = 21,
     #[doc = "22: Location 22"]
-    LOC22,
+    LOC22 = 22,
     #[doc = "23: Location 23"]
-    LOC23,
+    LOC23 = 23,
     #[doc = "24: Location 24"]
-    LOC24,
+    LOC24 = 24,
     #[doc = "25: Location 25"]
-    LOC25,
+    LOC25 = 25,
     #[doc = "26: Location 26"]
-    LOC26,
+    LOC26 = 26,
     #[doc = "27: Location 27"]
-    LOC27,
+    LOC27 = 27,
     #[doc = "28: Location 28"]
-    LOC28,
+    LOC28 = 28,
     #[doc = "29: Location 29"]
-    LOC29,
+    LOC29 = 29,
     #[doc = "30: Location 30"]
-    LOC30,
+    LOC30 = 30,
     #[doc = "31: Location 31"]
-    LOC31,
+    LOC31 = 31,
 }
 impl From<RXLOC_A> for u8 {
     #[inline(always)]
     fn from(variant: RXLOC_A) -> Self {
-        match variant {
-            RXLOC_A::LOC0 => 0,
-            RXLOC_A::LOC1 => 1,
-            RXLOC_A::LOC2 => 2,
-            RXLOC_A::LOC3 => 3,
-            RXLOC_A::LOC4 => 4,
-            RXLOC_A::LOC5 => 5,
-            RXLOC_A::LOC6 => 6,
-            RXLOC_A::LOC7 => 7,
-            RXLOC_A::LOC8 => 8,
-            RXLOC_A::LOC9 => 9,
-            RXLOC_A::LOC10 => 10,
-            RXLOC_A::LOC11 => 11,
-            RXLOC_A::LOC12 => 12,
-            RXLOC_A::LOC13 => 13,
-            RXLOC_A::LOC14 => 14,
-            RXLOC_A::LOC15 => 15,
-            RXLOC_A::LOC16 => 16,
-            RXLOC_A::LOC17 => 17,
-            RXLOC_A::LOC18 => 18,
-            RXLOC_A::LOC19 => 19,
-            RXLOC_A::LOC20 => 20,
-            RXLOC_A::LOC21 => 21,
-            RXLOC_A::LOC22 => 22,
-            RXLOC_A::LOC23 => 23,
-            RXLOC_A::LOC24 => 24,
-            RXLOC_A::LOC25 => 25,
-            RXLOC_A::LOC26 => 26,
-            RXLOC_A::LOC27 => 27,
-            RXLOC_A::LOC28 => 28,
-            RXLOC_A::LOC29 => 29,
-            RXLOC_A::LOC30 => 30,
-            RXLOC_A::LOC31 => 31,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `RXLOC`"]
@@ -500,109 +468,77 @@ impl<'a> RXLOC_W<'a> {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum TXLOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
     #[doc = "4: Location 4"]
-    LOC4,
+    LOC4 = 4,
     #[doc = "5: Location 5"]
-    LOC5,
+    LOC5 = 5,
     #[doc = "6: Location 6"]
-    LOC6,
+    LOC6 = 6,
     #[doc = "7: Location 7"]
-    LOC7,
+    LOC7 = 7,
     #[doc = "8: Location 8"]
-    LOC8,
+    LOC8 = 8,
     #[doc = "9: Location 9"]
-    LOC9,
+    LOC9 = 9,
     #[doc = "10: Location 10"]
-    LOC10,
+    LOC10 = 10,
     #[doc = "11: Location 11"]
-    LOC11,
+    LOC11 = 11,
     #[doc = "12: Location 12"]
-    LOC12,
+    LOC12 = 12,
     #[doc = "13: Location 13"]
-    LOC13,
+    LOC13 = 13,
     #[doc = "14: Location 14"]
-    LOC14,
+    LOC14 = 14,
     #[doc = "15: Location 15"]
-    LOC15,
+    LOC15 = 15,
     #[doc = "16: Location 16"]
-    LOC16,
+    LOC16 = 16,
     #[doc = "17: Location 17"]
-    LOC17,
+    LOC17 = 17,
     #[doc = "18: Location 18"]
-    LOC18,
+    LOC18 = 18,
     #[doc = "19: Location 19"]
-    LOC19,
+    LOC19 = 19,
     #[doc = "20: Location 20"]
-    LOC20,
+    LOC20 = 20,
     #[doc = "21: Location 21"]
-    LOC21,
+    LOC21 = 21,
     #[doc = "22: Location 22"]
-    LOC22,
+    LOC22 = 22,
     #[doc = "23: Location 23"]
-    LOC23,
+    LOC23 = 23,
     #[doc = "24: Location 24"]
-    LOC24,
+    LOC24 = 24,
     #[doc = "25: Location 25"]
-    LOC25,
+    LOC25 = 25,
     #[doc = "26: Location 26"]
-    LOC26,
+    LOC26 = 26,
     #[doc = "27: Location 27"]
-    LOC27,
+    LOC27 = 27,
     #[doc = "28: Location 28"]
-    LOC28,
+    LOC28 = 28,
     #[doc = "29: Location 29"]
-    LOC29,
+    LOC29 = 29,
     #[doc = "30: Location 30"]
-    LOC30,
+    LOC30 = 30,
     #[doc = "31: Location 31"]
-    LOC31,
+    LOC31 = 31,
 }
 impl From<TXLOC_A> for u8 {
     #[inline(always)]
     fn from(variant: TXLOC_A) -> Self {
-        match variant {
-            TXLOC_A::LOC0 => 0,
-            TXLOC_A::LOC1 => 1,
-            TXLOC_A::LOC2 => 2,
-            TXLOC_A::LOC3 => 3,
-            TXLOC_A::LOC4 => 4,
-            TXLOC_A::LOC5 => 5,
-            TXLOC_A::LOC6 => 6,
-            TXLOC_A::LOC7 => 7,
-            TXLOC_A::LOC8 => 8,
-            TXLOC_A::LOC9 => 9,
-            TXLOC_A::LOC10 => 10,
-            TXLOC_A::LOC11 => 11,
-            TXLOC_A::LOC12 => 12,
-            TXLOC_A::LOC13 => 13,
-            TXLOC_A::LOC14 => 14,
-            TXLOC_A::LOC15 => 15,
-            TXLOC_A::LOC16 => 16,
-            TXLOC_A::LOC17 => 17,
-            TXLOC_A::LOC18 => 18,
-            TXLOC_A::LOC19 => 19,
-            TXLOC_A::LOC20 => 20,
-            TXLOC_A::LOC21 => 21,
-            TXLOC_A::LOC22 => 22,
-            TXLOC_A::LOC23 => 23,
-            TXLOC_A::LOC24 => 24,
-            TXLOC_A::LOC25 => 25,
-            TXLOC_A::LOC26 => 26,
-            TXLOC_A::LOC27 => 27,
-            TXLOC_A::LOC28 => 28,
-            TXLOC_A::LOC29 => 29,
-            TXLOC_A::LOC30 => 30,
-            TXLOC_A::LOC31 => 31,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `TXLOC`"]
@@ -988,109 +924,77 @@ impl<'a> TXLOC_W<'a> {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum CSLOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
     #[doc = "4: Location 4"]
-    LOC4,
+    LOC4 = 4,
     #[doc = "5: Location 5"]
-    LOC5,
+    LOC5 = 5,
     #[doc = "6: Location 6"]
-    LOC6,
+    LOC6 = 6,
     #[doc = "7: Location 7"]
-    LOC7,
+    LOC7 = 7,
     #[doc = "8: Location 8"]
-    LOC8,
+    LOC8 = 8,
     #[doc = "9: Location 9"]
-    LOC9,
+    LOC9 = 9,
     #[doc = "10: Location 10"]
-    LOC10,
+    LOC10 = 10,
     #[doc = "11: Location 11"]
-    LOC11,
+    LOC11 = 11,
     #[doc = "12: Location 12"]
-    LOC12,
+    LOC12 = 12,
     #[doc = "13: Location 13"]
-    LOC13,
+    LOC13 = 13,
     #[doc = "14: Location 14"]
-    LOC14,
+    LOC14 = 14,
     #[doc = "15: Location 15"]
-    LOC15,
+    LOC15 = 15,
     #[doc = "16: Location 16"]
-    LOC16,
+    LOC16 = 16,
     #[doc = "17: Location 17"]
-    LOC17,
+    LOC17 = 17,
     #[doc = "18: Location 18"]
-    LOC18,
+    LOC18 = 18,
     #[doc = "19: Location 19"]
-    LOC19,
+    LOC19 = 19,
     #[doc = "20: Location 20"]
-    LOC20,
+    LOC20 = 20,
     #[doc = "21: Location 21"]
-    LOC21,
+    LOC21 = 21,
     #[doc = "22: Location 22"]
-    LOC22,
+    LOC22 = 22,
     #[doc = "23: Location 23"]
-    LOC23,
+    LOC23 = 23,
     #[doc = "24: Location 24"]
-    LOC24,
+    LOC24 = 24,
     #[doc = "25: Location 25"]
-    LOC25,
+    LOC25 = 25,
     #[doc = "26: Location 26"]
-    LOC26,
+    LOC26 = 26,
     #[doc = "27: Location 27"]
-    LOC27,
+    LOC27 = 27,
     #[doc = "28: Location 28"]
-    LOC28,
+    LOC28 = 28,
     #[doc = "29: Location 29"]
-    LOC29,
+    LOC29 = 29,
     #[doc = "30: Location 30"]
-    LOC30,
+    LOC30 = 30,
     #[doc = "31: Location 31"]
-    LOC31,
+    LOC31 = 31,
 }
 impl From<CSLOC_A> for u8 {
     #[inline(always)]
     fn from(variant: CSLOC_A) -> Self {
-        match variant {
-            CSLOC_A::LOC0 => 0,
-            CSLOC_A::LOC1 => 1,
-            CSLOC_A::LOC2 => 2,
-            CSLOC_A::LOC3 => 3,
-            CSLOC_A::LOC4 => 4,
-            CSLOC_A::LOC5 => 5,
-            CSLOC_A::LOC6 => 6,
-            CSLOC_A::LOC7 => 7,
-            CSLOC_A::LOC8 => 8,
-            CSLOC_A::LOC9 => 9,
-            CSLOC_A::LOC10 => 10,
-            CSLOC_A::LOC11 => 11,
-            CSLOC_A::LOC12 => 12,
-            CSLOC_A::LOC13 => 13,
-            CSLOC_A::LOC14 => 14,
-            CSLOC_A::LOC15 => 15,
-            CSLOC_A::LOC16 => 16,
-            CSLOC_A::LOC17 => 17,
-            CSLOC_A::LOC18 => 18,
-            CSLOC_A::LOC19 => 19,
-            CSLOC_A::LOC20 => 20,
-            CSLOC_A::LOC21 => 21,
-            CSLOC_A::LOC22 => 22,
-            CSLOC_A::LOC23 => 23,
-            CSLOC_A::LOC24 => 24,
-            CSLOC_A::LOC25 => 25,
-            CSLOC_A::LOC26 => 26,
-            CSLOC_A::LOC27 => 27,
-            CSLOC_A::LOC28 => 28,
-            CSLOC_A::LOC29 => 29,
-            CSLOC_A::LOC30 => 30,
-            CSLOC_A::LOC31 => 31,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `CSLOC`"]
@@ -1476,109 +1380,77 @@ impl<'a> CSLOC_W<'a> {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum CLKLOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
     #[doc = "4: Location 4"]
-    LOC4,
+    LOC4 = 4,
     #[doc = "5: Location 5"]
-    LOC5,
+    LOC5 = 5,
     #[doc = "6: Location 6"]
-    LOC6,
+    LOC6 = 6,
     #[doc = "7: Location 7"]
-    LOC7,
+    LOC7 = 7,
     #[doc = "8: Location 8"]
-    LOC8,
+    LOC8 = 8,
     #[doc = "9: Location 9"]
-    LOC9,
+    LOC9 = 9,
     #[doc = "10: Location 10"]
-    LOC10,
+    LOC10 = 10,
     #[doc = "11: Location 11"]
-    LOC11,
+    LOC11 = 11,
     #[doc = "12: Location 12"]
-    LOC12,
+    LOC12 = 12,
     #[doc = "13: Location 13"]
-    LOC13,
+    LOC13 = 13,
     #[doc = "14: Location 14"]
-    LOC14,
+    LOC14 = 14,
     #[doc = "15: Location 15"]
-    LOC15,
+    LOC15 = 15,
     #[doc = "16: Location 16"]
-    LOC16,
+    LOC16 = 16,
     #[doc = "17: Location 17"]
-    LOC17,
+    LOC17 = 17,
     #[doc = "18: Location 18"]
-    LOC18,
+    LOC18 = 18,
     #[doc = "19: Location 19"]
-    LOC19,
+    LOC19 = 19,
     #[doc = "20: Location 20"]
-    LOC20,
+    LOC20 = 20,
     #[doc = "21: Location 21"]
-    LOC21,
+    LOC21 = 21,
     #[doc = "22: Location 22"]
-    LOC22,
+    LOC22 = 22,
     #[doc = "23: Location 23"]
-    LOC23,
+    LOC23 = 23,
     #[doc = "24: Location 24"]
-    LOC24,
+    LOC24 = 24,
     #[doc = "25: Location 25"]
-    LOC25,
+    LOC25 = 25,
     #[doc = "26: Location 26"]
-    LOC26,
+    LOC26 = 26,
     #[doc = "27: Location 27"]
-    LOC27,
+    LOC27 = 27,
     #[doc = "28: Location 28"]
-    LOC28,
+    LOC28 = 28,
     #[doc = "29: Location 29"]
-    LOC29,
+    LOC29 = 29,
     #[doc = "30: Location 30"]
-    LOC30,
+    LOC30 = 30,
     #[doc = "31: Location 31"]
-    LOC31,
+    LOC31 = 31,
 }
 impl From<CLKLOC_A> for u8 {
     #[inline(always)]
     fn from(variant: CLKLOC_A) -> Self {
-        match variant {
-            CLKLOC_A::LOC0 => 0,
-            CLKLOC_A::LOC1 => 1,
-            CLKLOC_A::LOC2 => 2,
-            CLKLOC_A::LOC3 => 3,
-            CLKLOC_A::LOC4 => 4,
-            CLKLOC_A::LOC5 => 5,
-            CLKLOC_A::LOC6 => 6,
-            CLKLOC_A::LOC7 => 7,
-            CLKLOC_A::LOC8 => 8,
-            CLKLOC_A::LOC9 => 9,
-            CLKLOC_A::LOC10 => 10,
-            CLKLOC_A::LOC11 => 11,
-            CLKLOC_A::LOC12 => 12,
-            CLKLOC_A::LOC13 => 13,
-            CLKLOC_A::LOC14 => 14,
-            CLKLOC_A::LOC15 => 15,
-            CLKLOC_A::LOC16 => 16,
-            CLKLOC_A::LOC17 => 17,
-            CLKLOC_A::LOC18 => 18,
-            CLKLOC_A::LOC19 => 19,
-            CLKLOC_A::LOC20 => 20,
-            CLKLOC_A::LOC21 => 21,
-            CLKLOC_A::LOC22 => 22,
-            CLKLOC_A::LOC23 => 23,
-            CLKLOC_A::LOC24 => 24,
-            CLKLOC_A::LOC25 => 25,
-            CLKLOC_A::LOC26 => 26,
-            CLKLOC_A::LOC27 => 27,
-            CLKLOC_A::LOC28 => 28,
-            CLKLOC_A::LOC29 => 29,
-            CLKLOC_A::LOC30 => 30,
-            CLKLOC_A::LOC31 => 31,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `CLKLOC`"]

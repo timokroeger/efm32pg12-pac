@@ -36,31 +36,25 @@ impl<'a> CONVMODE_W<'a> {
 }
 #[doc = "Channel 1 Trigger Mode\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum TRIGMODE_A {
     #[doc = "0: Channel 1 is triggered by CH1DATA or COMBDATA write"]
-    SW,
+    SW = 0,
     #[doc = "1: Channel 1 is triggered by PRS input"]
-    PRS,
+    PRS = 1,
     #[doc = "2: Channel 1 is triggered by Refresh timer"]
-    REFRESH,
+    REFRESH = 2,
     #[doc = "3: Channel 1 is triggered by CH1DATA/COMBDATA write or PRS input"]
-    SWPRS,
+    SWPRS = 3,
     #[doc = "4: Channel 1 is triggered by CH1DATA/COMBDATA write or Refresh timer"]
-    SWREFRESH,
+    SWREFRESH = 4,
     #[doc = "5: Channel 1 is triggered by LESENSE"]
-    LESENSE,
+    LESENSE = 5,
 }
 impl From<TRIGMODE_A> for u8 {
     #[inline(always)]
     fn from(variant: TRIGMODE_A) -> Self {
-        match variant {
-            TRIGMODE_A::SW => 0,
-            TRIGMODE_A::PRS => 1,
-            TRIGMODE_A::REFRESH => 2,
-            TRIGMODE_A::SWPRS => 3,
-            TRIGMODE_A::SWREFRESH => 4,
-            TRIGMODE_A::LESENSE => 5,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `TRIGMODE`"]
@@ -184,49 +178,37 @@ impl<'a> PRSASYNC_W<'a> {
 }
 #[doc = "Channel 1 PRS Trigger Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum PRSSEL_A {
     #[doc = "0: PRS ch 0 triggers a conversion."]
-    PRSCH0,
+    PRSCH0 = 0,
     #[doc = "1: PRS ch 1 triggers a conversion."]
-    PRSCH1,
+    PRSCH1 = 1,
     #[doc = "2: PRS ch 2 triggers a conversion."]
-    PRSCH2,
+    PRSCH2 = 2,
     #[doc = "3: PRS ch 3 triggers a conversion."]
-    PRSCH3,
+    PRSCH3 = 3,
     #[doc = "4: PRS ch 4 triggers a conversion."]
-    PRSCH4,
+    PRSCH4 = 4,
     #[doc = "5: PRS ch 5 triggers a conversion."]
-    PRSCH5,
+    PRSCH5 = 5,
     #[doc = "6: PRS ch 6 triggers a conversion."]
-    PRSCH6,
+    PRSCH6 = 6,
     #[doc = "7: PRS ch 7 triggers a conversion."]
-    PRSCH7,
+    PRSCH7 = 7,
     #[doc = "8: PRS ch 8 triggers a conversion."]
-    PRSCH8,
+    PRSCH8 = 8,
     #[doc = "9: PRS ch 9 triggers a conversion."]
-    PRSCH9,
+    PRSCH9 = 9,
     #[doc = "10: PRS ch 10 triggers a conversion."]
-    PRSCH10,
+    PRSCH10 = 10,
     #[doc = "11: PRS ch 11 triggers a conversion."]
-    PRSCH11,
+    PRSCH11 = 11,
 }
 impl From<PRSSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: PRSSEL_A) -> Self {
-        match variant {
-            PRSSEL_A::PRSCH0 => 0,
-            PRSSEL_A::PRSCH1 => 1,
-            PRSSEL_A::PRSCH2 => 2,
-            PRSSEL_A::PRSCH3 => 3,
-            PRSSEL_A::PRSCH4 => 4,
-            PRSSEL_A::PRSCH5 => 5,
-            PRSSEL_A::PRSCH6 => 6,
-            PRSSEL_A::PRSCH7 => 7,
-            PRSSEL_A::PRSCH8 => 8,
-            PRSSEL_A::PRSCH9 => 9,
-            PRSSEL_A::PRSCH10 => 10,
-            PRSSEL_A::PRSCH11 => 11,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `PRSSEL`"]

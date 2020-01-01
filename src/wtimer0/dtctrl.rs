@@ -108,49 +108,37 @@ impl<'a> DTCINV_W<'a> {
 }
 #[doc = "DTI PRS Source Channel Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum DTPRSSEL_A {
     #[doc = "0: PRS Channel 0 selected as input"]
-    PRSCH0,
+    PRSCH0 = 0,
     #[doc = "1: PRS Channel 1 selected as input"]
-    PRSCH1,
+    PRSCH1 = 1,
     #[doc = "2: PRS Channel 2 selected as input"]
-    PRSCH2,
+    PRSCH2 = 2,
     #[doc = "3: PRS Channel 3 selected as input"]
-    PRSCH3,
+    PRSCH3 = 3,
     #[doc = "4: PRS Channel 4 selected as input"]
-    PRSCH4,
+    PRSCH4 = 4,
     #[doc = "5: PRS Channel 5 selected as input"]
-    PRSCH5,
+    PRSCH5 = 5,
     #[doc = "6: PRS Channel 6 selected as input"]
-    PRSCH6,
+    PRSCH6 = 6,
     #[doc = "7: PRS Channel 7 selected as input"]
-    PRSCH7,
+    PRSCH7 = 7,
     #[doc = "8: PRS Channel 8 selected as input"]
-    PRSCH8,
+    PRSCH8 = 8,
     #[doc = "9: PRS Channel 9 selected as input"]
-    PRSCH9,
+    PRSCH9 = 9,
     #[doc = "10: PRS Channel 10 selected as input"]
-    PRSCH10,
+    PRSCH10 = 10,
     #[doc = "11: PRS Channel 11 selected as input"]
-    PRSCH11,
+    PRSCH11 = 11,
 }
 impl From<DTPRSSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: DTPRSSEL_A) -> Self {
-        match variant {
-            DTPRSSEL_A::PRSCH0 => 0,
-            DTPRSSEL_A::PRSCH1 => 1,
-            DTPRSSEL_A::PRSCH2 => 2,
-            DTPRSSEL_A::PRSCH3 => 3,
-            DTPRSSEL_A::PRSCH4 => 4,
-            DTPRSSEL_A::PRSCH5 => 5,
-            DTPRSSEL_A::PRSCH6 => 6,
-            DTPRSSEL_A::PRSCH7 => 7,
-            DTPRSSEL_A::PRSCH8 => 8,
-            DTPRSSEL_A::PRSCH9 => 9,
-            DTPRSSEL_A::PRSCH10 => 10,
-            DTPRSSEL_A::PRSCH11 => 11,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `DTPRSSEL`"]

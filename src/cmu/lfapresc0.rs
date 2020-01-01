@@ -12,61 +12,45 @@ impl crate::ResetValue for super::LFAPRESC0 {
 }
 #[doc = "Low Energy Timer 0 Prescaler\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum LETIMER0_A {
     #[doc = "0: LFACLKLETIMER0 = LFACLK"]
-    DIV1,
+    DIV1 = 0,
     #[doc = "1: LFACLKLETIMER0 = LFACLK/2"]
-    DIV2,
+    DIV2 = 1,
     #[doc = "2: LFACLKLETIMER0 = LFACLK/4"]
-    DIV4,
+    DIV4 = 2,
     #[doc = "3: LFACLKLETIMER0 = LFACLK/8"]
-    DIV8,
+    DIV8 = 3,
     #[doc = "4: LFACLKLETIMER0 = LFACLK/16"]
-    DIV16,
+    DIV16 = 4,
     #[doc = "5: LFACLKLETIMER0 = LFACLK/32"]
-    DIV32,
+    DIV32 = 5,
     #[doc = "6: LFACLKLETIMER0 = LFACLK/64"]
-    DIV64,
+    DIV64 = 6,
     #[doc = "7: LFACLKLETIMER0 = LFACLK/128"]
-    DIV128,
+    DIV128 = 7,
     #[doc = "8: LFACLKLETIMER0 = LFACLK/256"]
-    DIV256,
+    DIV256 = 8,
     #[doc = "9: LFACLKLETIMER0 = LFACLK/512"]
-    DIV512,
+    DIV512 = 9,
     #[doc = "10: LFACLKLETIMER0 = LFACLK/1024"]
-    DIV1024,
+    DIV1024 = 10,
     #[doc = "11: LFACLKLETIMER0 = LFACLK/2048"]
-    DIV2048,
+    DIV2048 = 11,
     #[doc = "12: LFACLKLETIMER0 = LFACLK/4096"]
-    DIV4096,
+    DIV4096 = 12,
     #[doc = "13: LFACLKLETIMER0 = LFACLK/8192"]
-    DIV8192,
+    DIV8192 = 13,
     #[doc = "14: LFACLKLETIMER0 = LFACLK/16384"]
-    DIV16384,
+    DIV16384 = 14,
     #[doc = "15: LFACLKLETIMER0 = LFACLK/32768"]
-    DIV32768,
+    DIV32768 = 15,
 }
 impl From<LETIMER0_A> for u8 {
     #[inline(always)]
     fn from(variant: LETIMER0_A) -> Self {
-        match variant {
-            LETIMER0_A::DIV1 => 0,
-            LETIMER0_A::DIV2 => 1,
-            LETIMER0_A::DIV4 => 2,
-            LETIMER0_A::DIV8 => 3,
-            LETIMER0_A::DIV16 => 4,
-            LETIMER0_A::DIV32 => 5,
-            LETIMER0_A::DIV64 => 6,
-            LETIMER0_A::DIV128 => 7,
-            LETIMER0_A::DIV256 => 8,
-            LETIMER0_A::DIV512 => 9,
-            LETIMER0_A::DIV1024 => 10,
-            LETIMER0_A::DIV2048 => 11,
-            LETIMER0_A::DIV4096 => 12,
-            LETIMER0_A::DIV8192 => 13,
-            LETIMER0_A::DIV16384 => 14,
-            LETIMER0_A::DIV32768 => 15,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `LETIMER0`"]
@@ -277,25 +261,21 @@ impl<'a> LETIMER0_W<'a> {
 }
 #[doc = "Low Energy Sensor Interface Prescaler\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum LESENSE_A {
     #[doc = "0: LFACLKLESENSE = LFACLK"]
-    DIV1,
+    DIV1 = 0,
     #[doc = "1: LFACLKLESENSE = LFACLK/2"]
-    DIV2,
+    DIV2 = 1,
     #[doc = "2: LFACLKLESENSE = LFACLK/4"]
-    DIV4,
+    DIV4 = 2,
     #[doc = "3: LFACLKLESENSE = LFACLK/8"]
-    DIV8,
+    DIV8 = 3,
 }
 impl From<LESENSE_A> for u8 {
     #[inline(always)]
     fn from(variant: LESENSE_A) -> Self {
-        match variant {
-            LESENSE_A::DIV1 => 0,
-            LESENSE_A::DIV2 => 1,
-            LESENSE_A::DIV4 => 2,
-            LESENSE_A::DIV8 => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `LESENSE`"]

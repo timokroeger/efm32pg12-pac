@@ -12,49 +12,37 @@ impl crate::ResetValue for super::INPUT {
 }
 #[doc = "S0IN PRS Channel Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum S0PRSSEL_A {
     #[doc = "0: PRS Channel 0 selected."]
-    PRSCH0,
+    PRSCH0 = 0,
     #[doc = "1: PRS Channel 1 selected."]
-    PRSCH1,
+    PRSCH1 = 1,
     #[doc = "2: PRS Channel 2 selected."]
-    PRSCH2,
+    PRSCH2 = 2,
     #[doc = "3: PRS Channel 3 selected."]
-    PRSCH3,
+    PRSCH3 = 3,
     #[doc = "4: PRS Channel 4 selected."]
-    PRSCH4,
+    PRSCH4 = 4,
     #[doc = "5: PRS Channel 5 selected."]
-    PRSCH5,
+    PRSCH5 = 5,
     #[doc = "6: PRS Channel 6 selected."]
-    PRSCH6,
+    PRSCH6 = 6,
     #[doc = "7: PRS Channel 7 selected."]
-    PRSCH7,
+    PRSCH7 = 7,
     #[doc = "8: PRS Channel 8 selected."]
-    PRSCH8,
+    PRSCH8 = 8,
     #[doc = "9: PRS Channel 9 selected."]
-    PRSCH9,
+    PRSCH9 = 9,
     #[doc = "10: PRS Channel 10 selected."]
-    PRSCH10,
+    PRSCH10 = 10,
     #[doc = "11: PRS Channel 11 selected."]
-    PRSCH11,
+    PRSCH11 = 11,
 }
 impl From<S0PRSSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: S0PRSSEL_A) -> Self {
-        match variant {
-            S0PRSSEL_A::PRSCH0 => 0,
-            S0PRSSEL_A::PRSCH1 => 1,
-            S0PRSSEL_A::PRSCH2 => 2,
-            S0PRSSEL_A::PRSCH3 => 3,
-            S0PRSSEL_A::PRSCH4 => 4,
-            S0PRSSEL_A::PRSCH5 => 5,
-            S0PRSSEL_A::PRSCH6 => 6,
-            S0PRSSEL_A::PRSCH7 => 7,
-            S0PRSSEL_A::PRSCH8 => 8,
-            S0PRSSEL_A::PRSCH9 => 9,
-            S0PRSSEL_A::PRSCH10 => 10,
-            S0PRSSEL_A::PRSCH11 => 11,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `S0PRSSEL`"]
@@ -244,49 +232,37 @@ impl<'a> S0PRSEN_W<'a> {
 }
 #[doc = "S1IN PRS Channel Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum S1PRSSEL_A {
     #[doc = "0: PRS Channel 0 selected."]
-    PRSCH0,
+    PRSCH0 = 0,
     #[doc = "1: PRS Channel 1 selected."]
-    PRSCH1,
+    PRSCH1 = 1,
     #[doc = "2: PRS Channel 2 selected."]
-    PRSCH2,
+    PRSCH2 = 2,
     #[doc = "3: PRS Channel 3 selected."]
-    PRSCH3,
+    PRSCH3 = 3,
     #[doc = "4: PRS Channel 4 selected."]
-    PRSCH4,
+    PRSCH4 = 4,
     #[doc = "5: PRS Channel 5 selected."]
-    PRSCH5,
+    PRSCH5 = 5,
     #[doc = "6: PRS Channel 6 selected."]
-    PRSCH6,
+    PRSCH6 = 6,
     #[doc = "7: PRS Channel 7 selected."]
-    PRSCH7,
+    PRSCH7 = 7,
     #[doc = "8: PRS Channel 8 selected."]
-    PRSCH8,
+    PRSCH8 = 8,
     #[doc = "9: PRS Channel 9 selected."]
-    PRSCH9,
+    PRSCH9 = 9,
     #[doc = "10: PRS Channel 10 selected."]
-    PRSCH10,
+    PRSCH10 = 10,
     #[doc = "11: PRS Channel 11 selected."]
-    PRSCH11,
+    PRSCH11 = 11,
 }
 impl From<S1PRSSEL_A> for u8 {
     #[inline(always)]
     fn from(variant: S1PRSSEL_A) -> Self {
-        match variant {
-            S1PRSSEL_A::PRSCH0 => 0,
-            S1PRSSEL_A::PRSCH1 => 1,
-            S1PRSSEL_A::PRSCH2 => 2,
-            S1PRSSEL_A::PRSCH3 => 3,
-            S1PRSSEL_A::PRSCH4 => 4,
-            S1PRSSEL_A::PRSCH5 => 5,
-            S1PRSSEL_A::PRSCH6 => 6,
-            S1PRSSEL_A::PRSCH7 => 7,
-            S1PRSSEL_A::PRSCH8 => 8,
-            S1PRSSEL_A::PRSCH9 => 9,
-            S1PRSSEL_A::PRSCH10 => 10,
-            S1PRSSEL_A::PRSCH11 => 11,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `S1PRSSEL`"]

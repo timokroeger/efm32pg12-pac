@@ -12,16 +12,15 @@ impl crate::ResetValue for super::HFPRESC {
 }
 #[doc = "HFCLK Prescaler\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum PRESC_A {
     #[doc = "0: `0`"]
-    NODIVISION,
+    NODIVISION = 0,
 }
 impl From<PRESC_A> for u8 {
     #[inline(always)]
     fn from(variant: PRESC_A) -> Self {
-        match variant {
-            PRESC_A::NODIVISION => 0,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `PRESC`"]
@@ -68,17 +67,14 @@ impl<'a> PRESC_W<'a> {
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum HFCLKLEPRESC_A {
     #[doc = "0: HFCLKLE is HFBUSCLKLE divided by 2."]
-    DIV2,
+    DIV2 = 0,
     #[doc = "1: HFCLKLE is HFBUSCLKLE divided by 4."]
-    DIV4,
+    DIV4 = 1,
 }
 impl From<HFCLKLEPRESC_A> for bool {
     #[inline(always)]
     fn from(variant: HFCLKLEPRESC_A) -> Self {
-        match variant {
-            HFCLKLEPRESC_A::DIV2 => false,
-            HFCLKLEPRESC_A::DIV4 => true,
-        }
+        variant as u8 != 0
     }
 }
 #[doc = "Reader of field `HFCLKLEPRESC`"]

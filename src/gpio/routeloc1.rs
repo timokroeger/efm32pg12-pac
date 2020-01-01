@@ -12,25 +12,21 @@ impl crate::ResetValue for super::ROUTELOC1 {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum ETMTCLKLOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
 }
 impl From<ETMTCLKLOC_A> for u8 {
     #[inline(always)]
     fn from(variant: ETMTCLKLOC_A) -> Self {
-        match variant {
-            ETMTCLKLOC_A::LOC0 => 0,
-            ETMTCLKLOC_A::LOC1 => 1,
-            ETMTCLKLOC_A::LOC2 => 2,
-            ETMTCLKLOC_A::LOC3 => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `ETMTCLKLOC`"]
@@ -108,25 +104,21 @@ impl<'a> ETMTCLKLOC_W<'a> {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum ETMTD0LOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
 }
 impl From<ETMTD0LOC_A> for u8 {
     #[inline(always)]
     fn from(variant: ETMTD0LOC_A) -> Self {
-        match variant {
-            ETMTD0LOC_A::LOC0 => 0,
-            ETMTD0LOC_A::LOC1 => 1,
-            ETMTD0LOC_A::LOC2 => 2,
-            ETMTD0LOC_A::LOC3 => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `ETMTD0LOC`"]
@@ -204,25 +196,21 @@ impl<'a> ETMTD0LOC_W<'a> {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum ETMTD1LOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
 }
 impl From<ETMTD1LOC_A> for u8 {
     #[inline(always)]
     fn from(variant: ETMTD1LOC_A) -> Self {
-        match variant {
-            ETMTD1LOC_A::LOC0 => 0,
-            ETMTD1LOC_A::LOC1 => 1,
-            ETMTD1LOC_A::LOC2 => 2,
-            ETMTD1LOC_A::LOC3 => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `ETMTD1LOC`"]
@@ -300,25 +288,21 @@ impl<'a> ETMTD1LOC_W<'a> {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum ETMTD2LOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
 }
 impl From<ETMTD2LOC_A> for u8 {
     #[inline(always)]
     fn from(variant: ETMTD2LOC_A) -> Self {
-        match variant {
-            ETMTD2LOC_A::LOC0 => 0,
-            ETMTD2LOC_A::LOC1 => 1,
-            ETMTD2LOC_A::LOC2 => 2,
-            ETMTD2LOC_A::LOC3 => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `ETMTD2LOC`"]
@@ -396,25 +380,21 @@ impl<'a> ETMTD2LOC_W<'a> {
 }
 #[doc = "I/O Location\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum ETMTD3LOC_A {
     #[doc = "0: Location 0"]
-    LOC0,
+    LOC0 = 0,
     #[doc = "1: Location 1"]
-    LOC1,
+    LOC1 = 1,
     #[doc = "2: Location 2"]
-    LOC2,
+    LOC2 = 2,
     #[doc = "3: Location 3"]
-    LOC3,
+    LOC3 = 3,
 }
 impl From<ETMTD3LOC_A> for u8 {
     #[inline(always)]
     fn from(variant: ETMTD3LOC_A) -> Self {
-        match variant {
-            ETMTD3LOC_A::LOC0 => 0,
-            ETMTD3LOC_A::LOC1 => 1,
-            ETMTD3LOC_A::LOC2 => 2,
-            ETMTD3LOC_A::LOC3 => 3,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `ETMTD3LOC`"]

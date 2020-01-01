@@ -14,17 +14,14 @@ impl crate::ResetValue for super::DBGCLKSEL {
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum DBG_A {
     #[doc = "0: AUXHFRCO is the debug trace clock"]
-    AUXHFRCO,
+    AUXHFRCO = 0,
     #[doc = "1: HFCLK is the debug trace clock"]
-    HFCLK,
+    HFCLK = 1,
 }
 impl From<DBG_A> for bool {
     #[inline(always)]
     fn from(variant: DBG_A) -> Self {
-        match variant {
-            DBG_A::AUXHFRCO => false,
-            DBG_A::HFCLK => true,
-        }
+        variant as u8 != 0
     }
 }
 #[doc = "Reader of field `DBG`"]

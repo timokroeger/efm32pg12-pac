@@ -12,37 +12,29 @@ impl crate::ResetValue for super::EXTIPSELH {
 }
 #[doc = "External Interrupt 8 Port Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum EXTIPSEL8_A {
     #[doc = "0: Port A group selected for external interrupt 8"]
-    PORTA,
+    PORTA = 0,
     #[doc = "1: Port B group selected for external interrupt 8"]
-    PORTB,
+    PORTB = 1,
     #[doc = "2: Port C group selected for external interrupt 8"]
-    PORTC,
+    PORTC = 2,
     #[doc = "3: Port D group selected for external interrupt 8"]
-    PORTD,
+    PORTD = 3,
     #[doc = "5: Port F group selected for external interrupt 8"]
-    PORTF,
+    PORTF = 5,
     #[doc = "8: Port I group selected for external interrupt 8"]
-    PORTI,
+    PORTI = 8,
     #[doc = "9: Port J group selected for external interrupt 8"]
-    PORTJ,
+    PORTJ = 9,
     #[doc = "10: Port K group selected for external interrupt 8"]
-    PORTK,
+    PORTK = 10,
 }
 impl From<EXTIPSEL8_A> for u8 {
     #[inline(always)]
     fn from(variant: EXTIPSEL8_A) -> Self {
-        match variant {
-            EXTIPSEL8_A::PORTA => 0,
-            EXTIPSEL8_A::PORTB => 1,
-            EXTIPSEL8_A::PORTC => 2,
-            EXTIPSEL8_A::PORTD => 3,
-            EXTIPSEL8_A::PORTF => 5,
-            EXTIPSEL8_A::PORTI => 8,
-            EXTIPSEL8_A::PORTJ => 9,
-            EXTIPSEL8_A::PORTK => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `EXTIPSEL8`"]
@@ -164,37 +156,29 @@ impl<'a> EXTIPSEL8_W<'a> {
 }
 #[doc = "External Interrupt 9 Port Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum EXTIPSEL9_A {
     #[doc = "0: Port A group selected for external interrupt 9"]
-    PORTA,
+    PORTA = 0,
     #[doc = "1: Port B group selected for external interrupt 9"]
-    PORTB,
+    PORTB = 1,
     #[doc = "2: Port C group selected for external interrupt 9"]
-    PORTC,
+    PORTC = 2,
     #[doc = "3: Port D group selected for external interrupt 9"]
-    PORTD,
+    PORTD = 3,
     #[doc = "5: Port F group selected for external interrupt 9"]
-    PORTF,
+    PORTF = 5,
     #[doc = "8: Port I group selected for external interrupt 9"]
-    PORTI,
+    PORTI = 8,
     #[doc = "9: Port J group selected for external interrupt 9"]
-    PORTJ,
+    PORTJ = 9,
     #[doc = "10: Port K group selected for external interrupt 9"]
-    PORTK,
+    PORTK = 10,
 }
 impl From<EXTIPSEL9_A> for u8 {
     #[inline(always)]
     fn from(variant: EXTIPSEL9_A) -> Self {
-        match variant {
-            EXTIPSEL9_A::PORTA => 0,
-            EXTIPSEL9_A::PORTB => 1,
-            EXTIPSEL9_A::PORTC => 2,
-            EXTIPSEL9_A::PORTD => 3,
-            EXTIPSEL9_A::PORTF => 5,
-            EXTIPSEL9_A::PORTI => 8,
-            EXTIPSEL9_A::PORTJ => 9,
-            EXTIPSEL9_A::PORTK => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `EXTIPSEL9`"]
@@ -316,37 +300,29 @@ impl<'a> EXTIPSEL9_W<'a> {
 }
 #[doc = "External Interrupt 10 Port Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum EXTIPSEL10_A {
     #[doc = "0: Port A group selected for external interrupt 10"]
-    PORTA,
+    PORTA = 0,
     #[doc = "1: Port B group selected for external interrupt 10"]
-    PORTB,
+    PORTB = 1,
     #[doc = "2: Port C group selected for external interrupt 10"]
-    PORTC,
+    PORTC = 2,
     #[doc = "3: Port D group selected for external interrupt 10"]
-    PORTD,
+    PORTD = 3,
     #[doc = "5: Port F group selected for external interrupt 10"]
-    PORTF,
+    PORTF = 5,
     #[doc = "8: Port I group selected for external interrupt 10"]
-    PORTI,
+    PORTI = 8,
     #[doc = "9: Port J group selected for external interrupt 10"]
-    PORTJ,
+    PORTJ = 9,
     #[doc = "10: Port K group selected for external interrupt 10"]
-    PORTK,
+    PORTK = 10,
 }
 impl From<EXTIPSEL10_A> for u8 {
     #[inline(always)]
     fn from(variant: EXTIPSEL10_A) -> Self {
-        match variant {
-            EXTIPSEL10_A::PORTA => 0,
-            EXTIPSEL10_A::PORTB => 1,
-            EXTIPSEL10_A::PORTC => 2,
-            EXTIPSEL10_A::PORTD => 3,
-            EXTIPSEL10_A::PORTF => 5,
-            EXTIPSEL10_A::PORTI => 8,
-            EXTIPSEL10_A::PORTJ => 9,
-            EXTIPSEL10_A::PORTK => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `EXTIPSEL10`"]
@@ -468,37 +444,29 @@ impl<'a> EXTIPSEL10_W<'a> {
 }
 #[doc = "External Interrupt 11 Port Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum EXTIPSEL11_A {
     #[doc = "0: Port A group selected for external interrupt 11"]
-    PORTA,
+    PORTA = 0,
     #[doc = "1: Port B group selected for external interrupt 11"]
-    PORTB,
+    PORTB = 1,
     #[doc = "2: Port C group selected for external interrupt 11"]
-    PORTC,
+    PORTC = 2,
     #[doc = "3: Port D group selected for external interrupt 11"]
-    PORTD,
+    PORTD = 3,
     #[doc = "5: Port F group selected for external interrupt 11"]
-    PORTF,
+    PORTF = 5,
     #[doc = "8: Port I group selected for external interrupt 11"]
-    PORTI,
+    PORTI = 8,
     #[doc = "9: Port J group selected for external interrupt 11"]
-    PORTJ,
+    PORTJ = 9,
     #[doc = "10: Port K group selected for external interrupt 11"]
-    PORTK,
+    PORTK = 10,
 }
 impl From<EXTIPSEL11_A> for u8 {
     #[inline(always)]
     fn from(variant: EXTIPSEL11_A) -> Self {
-        match variant {
-            EXTIPSEL11_A::PORTA => 0,
-            EXTIPSEL11_A::PORTB => 1,
-            EXTIPSEL11_A::PORTC => 2,
-            EXTIPSEL11_A::PORTD => 3,
-            EXTIPSEL11_A::PORTF => 5,
-            EXTIPSEL11_A::PORTI => 8,
-            EXTIPSEL11_A::PORTJ => 9,
-            EXTIPSEL11_A::PORTK => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `EXTIPSEL11`"]
@@ -620,37 +588,29 @@ impl<'a> EXTIPSEL11_W<'a> {
 }
 #[doc = "External Interrupt 12 Port Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum EXTIPSEL12_A {
     #[doc = "0: Port A group selected for external interrupt 12"]
-    PORTA,
+    PORTA = 0,
     #[doc = "1: Port B group selected for external interrupt 12"]
-    PORTB,
+    PORTB = 1,
     #[doc = "2: Port C group selected for external interrupt 12"]
-    PORTC,
+    PORTC = 2,
     #[doc = "3: Port D group selected for external interrupt 12"]
-    PORTD,
+    PORTD = 3,
     #[doc = "5: Port F group selected for external interrupt 12"]
-    PORTF,
+    PORTF = 5,
     #[doc = "8: Port I group selected for external interrupt 12"]
-    PORTI,
+    PORTI = 8,
     #[doc = "9: Port J group selected for external interrupt 12"]
-    PORTJ,
+    PORTJ = 9,
     #[doc = "10: Port K group selected for external interrupt 12"]
-    PORTK,
+    PORTK = 10,
 }
 impl From<EXTIPSEL12_A> for u8 {
     #[inline(always)]
     fn from(variant: EXTIPSEL12_A) -> Self {
-        match variant {
-            EXTIPSEL12_A::PORTA => 0,
-            EXTIPSEL12_A::PORTB => 1,
-            EXTIPSEL12_A::PORTC => 2,
-            EXTIPSEL12_A::PORTD => 3,
-            EXTIPSEL12_A::PORTF => 5,
-            EXTIPSEL12_A::PORTI => 8,
-            EXTIPSEL12_A::PORTJ => 9,
-            EXTIPSEL12_A::PORTK => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `EXTIPSEL12`"]
@@ -772,37 +732,29 @@ impl<'a> EXTIPSEL12_W<'a> {
 }
 #[doc = "External Interrupt 13 Port Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum EXTIPSEL13_A {
     #[doc = "0: Port A group selected for external interrupt 13"]
-    PORTA,
+    PORTA = 0,
     #[doc = "1: Port B group selected for external interrupt 13"]
-    PORTB,
+    PORTB = 1,
     #[doc = "2: Port C group selected for external interrupt 13"]
-    PORTC,
+    PORTC = 2,
     #[doc = "3: Port D group selected for external interrupt 13"]
-    PORTD,
+    PORTD = 3,
     #[doc = "5: Port F group selected for external interrupt 13"]
-    PORTF,
+    PORTF = 5,
     #[doc = "8: Port I group selected for external interrupt 13"]
-    PORTI,
+    PORTI = 8,
     #[doc = "9: Port J group selected for external interrupt 13"]
-    PORTJ,
+    PORTJ = 9,
     #[doc = "10: Port K group selected for external interrupt 13"]
-    PORTK,
+    PORTK = 10,
 }
 impl From<EXTIPSEL13_A> for u8 {
     #[inline(always)]
     fn from(variant: EXTIPSEL13_A) -> Self {
-        match variant {
-            EXTIPSEL13_A::PORTA => 0,
-            EXTIPSEL13_A::PORTB => 1,
-            EXTIPSEL13_A::PORTC => 2,
-            EXTIPSEL13_A::PORTD => 3,
-            EXTIPSEL13_A::PORTF => 5,
-            EXTIPSEL13_A::PORTI => 8,
-            EXTIPSEL13_A::PORTJ => 9,
-            EXTIPSEL13_A::PORTK => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `EXTIPSEL13`"]
@@ -924,37 +876,29 @@ impl<'a> EXTIPSEL13_W<'a> {
 }
 #[doc = "External Interrupt 14 Port Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum EXTIPSEL14_A {
     #[doc = "0: Port A group selected for external interrupt 14"]
-    PORTA,
+    PORTA = 0,
     #[doc = "1: Port B group selected for external interrupt 14"]
-    PORTB,
+    PORTB = 1,
     #[doc = "2: Port C group selected for external interrupt 14"]
-    PORTC,
+    PORTC = 2,
     #[doc = "3: Port D group selected for external interrupt 14"]
-    PORTD,
+    PORTD = 3,
     #[doc = "5: Port F group selected for external interrupt 14"]
-    PORTF,
+    PORTF = 5,
     #[doc = "8: Port I group selected for external interrupt 14"]
-    PORTI,
+    PORTI = 8,
     #[doc = "9: Port J group selected for external interrupt 14"]
-    PORTJ,
+    PORTJ = 9,
     #[doc = "10: Port K group selected for external interrupt 14"]
-    PORTK,
+    PORTK = 10,
 }
 impl From<EXTIPSEL14_A> for u8 {
     #[inline(always)]
     fn from(variant: EXTIPSEL14_A) -> Self {
-        match variant {
-            EXTIPSEL14_A::PORTA => 0,
-            EXTIPSEL14_A::PORTB => 1,
-            EXTIPSEL14_A::PORTC => 2,
-            EXTIPSEL14_A::PORTD => 3,
-            EXTIPSEL14_A::PORTF => 5,
-            EXTIPSEL14_A::PORTI => 8,
-            EXTIPSEL14_A::PORTJ => 9,
-            EXTIPSEL14_A::PORTK => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `EXTIPSEL14`"]
@@ -1076,37 +1020,29 @@ impl<'a> EXTIPSEL14_W<'a> {
 }
 #[doc = "External Interrupt 15 Port Select\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
 pub enum EXTIPSEL15_A {
     #[doc = "0: Port A group selected for external interrupt 15"]
-    PORTA,
+    PORTA = 0,
     #[doc = "1: Port B group selected for external interrupt 15"]
-    PORTB,
+    PORTB = 1,
     #[doc = "2: Port C group selected for external interrupt 15"]
-    PORTC,
+    PORTC = 2,
     #[doc = "3: Port D group selected for external interrupt 15"]
-    PORTD,
+    PORTD = 3,
     #[doc = "5: Port F group selected for external interrupt 15"]
-    PORTF,
+    PORTF = 5,
     #[doc = "8: Port I group selected for external interrupt 15"]
-    PORTI,
+    PORTI = 8,
     #[doc = "9: Port J group selected for external interrupt 15"]
-    PORTJ,
+    PORTJ = 9,
     #[doc = "10: Port K group selected for external interrupt 15"]
-    PORTK,
+    PORTK = 10,
 }
 impl From<EXTIPSEL15_A> for u8 {
     #[inline(always)]
     fn from(variant: EXTIPSEL15_A) -> Self {
-        match variant {
-            EXTIPSEL15_A::PORTA => 0,
-            EXTIPSEL15_A::PORTB => 1,
-            EXTIPSEL15_A::PORTC => 2,
-            EXTIPSEL15_A::PORTD => 3,
-            EXTIPSEL15_A::PORTF => 5,
-            EXTIPSEL15_A::PORTI => 8,
-            EXTIPSEL15_A::PORTJ => 9,
-            EXTIPSEL15_A::PORTK => 10,
-        }
+        variant as _
     }
 }
 #[doc = "Reader of field `EXTIPSEL15`"]
